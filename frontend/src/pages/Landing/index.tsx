@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import landing from '../../assets/images/landing.svg';
-import addWork from '../../assets/images/icons/add_work.svg';
+import landing from '../../assets/images/ilustration.svg';
+import add from '../../assets/images/icons/add_work.svg';
 import searchIcon from '../../assets/images/icons/work.svg';
 import purpleHeart from '../../assets/images/icons/purple-heart.svg';
 
@@ -14,37 +14,35 @@ const Landing = () => {
   return (
     <>
       <Header />
-      <div id='page-landing'>
-        <div id='page-landing-content' className='container'>
-          <div className='logo-container'>
-            <h1>
-              Conectando Você aos <span>Melhores Profissionais</span> para
-              Transformar sua Casa.
-            </h1>
-            <h4>Reserve seu profissional em segundos.</h4>
-          </div>
-          <img
-            src={landing}
-            className='hero-image'
-            alt='Marketplace para busca de profissionais'
-          />
+      <section className='page-landing'>
+        <div className='container'>
+          <div className='landing-text'>
+            <span>
+              Conectando você aos melhores profissionais, de forma rápida e
+              simples"
+            </span>
+            <h1>Encontre os melhores profissionais para suas necessidades</h1>
+            <p>
+              Com apenas alguns cliques, você pode encontrar o profissional que
+              deseja, tudo sem complicações.
+            </p>
 
-          <div className='buttons-container'>
-            <Link to='' className='providers'>
-              <img src={searchIcon} alt='contratar' />
-              Encontrar prestador
-            </Link>
-            <Link to='' className='register'>
-              <img src={addWork} alt='contratar' />
-              cadastrar
-            </Link>
+            <div className='container-buttons'>
+              <button className='professional'>
+                <img src={searchIcon} alt='' />
+                Para clientes
+              </button>
+              <button className='create'>
+                <img src={add} alt='' />
+                Para profissionais
+              </button>
+            </div>
           </div>
-          <span className='total-providers'>
-            Total de 200 prestadores já cadastrados{' '}
-            <img src={purpleHeart} alt='coração roxo' />
-          </span>
+          <div className='landing-ilustra'>
+            <img src={landing} alt='ilustração de pessoas limpando' />
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

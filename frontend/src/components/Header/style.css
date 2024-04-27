@@ -3,7 +3,7 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  padding: 4rem 12rem;
+  padding: 4rem 8rem;
 }
 
 header .logo {
@@ -11,7 +11,7 @@ header .logo {
   max-width: 15.2rem;
 }
 
-ul {
+header ul {
   display: none;
 }
 

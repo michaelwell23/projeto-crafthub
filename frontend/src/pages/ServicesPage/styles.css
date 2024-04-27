@@ -1,0 +1,59 @@
+.services {
+  padding: 4rem 8rem;
+}
+
+.ilustra-section {
+  max-width: 54.4rem;
+}
+
+.ilustra-section img {
+  width: 100%;
+
+  border-radius: 2rem;
+  padding-bottom: 5rem;
+}
+
+.ilustra-section h3 {
+  font-size: 3.2rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+
+  padding-bottom: 2rem;
+}
+
+.ilustra-section p {
+  font-weight: 400;
+}
+
+.services-list {
+  display: grid;
+  padding-left: 8rem;
+}
+
+.services-list h3 {
+  font-size: 3.2rem;
+  padding-bottom: 3rem;
+}
+
+.services-list p {
+  font-weight: 400;
+  padding-bottom: 5rem;
+}
+
+.services-list ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--color-secundary-dark);
+}

@@ -2,13 +2,10 @@
   font-size: 60%;
 
   --color-background: #dbe2f8;
-  --color-primary-lighter: #80aded;
-  --color-primary-light: #8eb5eb;
-  --color-primary: #658bd8;
   --color-primary: #fe717a;
   --color-primary-dark: #f8646e;
-  --color-secundary: #ffcd92;
-  --color-secundary-dark: #d7a449;
+  --color-secundary: #5a5857;
+  --color-secundary-dark: #1f1e1d;
   --color-title-in-primary: #ffffff;
   --color-text-in-primary: #9cacaf;
   --color-text-title: #32264d;
@@ -54,12 +51,7 @@ textarea {
 }
 
 .container {
-  width: 90vw;
-  max-width: 700px;
-}
-
-@media (min-width: 700px) {
-  :root {
-    font-size: 62.5%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
