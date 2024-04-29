@@ -3,41 +3,57 @@ import Header from '../../components/Header';
 
 import './styles.css';
 
-import AboutImage from '../../assets/images/about-img.jpg';
+import AboutImage from '../../assets/images/about-dec-v2.svg';
 
 const About = () => {
   return (
     <>
       <Header />
-      <section className='page-about'>
+
+      <div id='about' className='about section'>
         <div className='container'>
-          <div className='about-text'>
-            <h2>About</h2>
-            <p>
-              Em 2017, diante das dificuldades em encontrar profissionais
-              confiáveis para serviços domésticos, uma equipe dedicada de
-              empreendedores visionários uniu forças para criar uma solução
-              inovadora. Inspirados pela paixão pela tecnologia e pelo
-              compromisso com a transparência e a confiabilidade, eles deram
-              vida à <span>CraftHub</span>, uma plataforma online que conecta
-              clientes a profissionais qualificados. Com um time de
-              desenvolvedores e designers talentosos, a <span>CraftHub</span>{' '}
-              rapidamente se tornou um ponto de referência na comunidade local,
-              oferecendo serviços confiáveis e excelentes. Desde então, nossa
-              missão é proporcionar uma experiência tranquila e satisfatória
-              para nossos clientes, ao mesmo tempo em que oferecemos
-              oportunidades justas para os profissionais cadastrados em nossa
-              plataforma. Com milhares de usuários satisfeitos e uma crescente
-              rede de profissionais talentosos, na <span>CraftHub</span>,
-              continuamos comprometidos em inovar e aprimorar nossos serviços,
-              tornando a vida doméstica mais fácil e agradável para todos.
-            </p>
-          </div>
-          <div className='about-ilustra'>
-            <img src={AboutImage} alt='' />
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='row'>
+                <div className='col-lg-6'>
+                  <div
+                    className='about-left-image  wow fadeInLeft'
+                    data-wow-duration='1s'
+                    data-wow-delay='0.5s'
+                  >
+                    <img src={AboutImage} alt='' />
+                  </div>
+                </div>
+                <div
+                  className='col-lg-6 align-self-center  wow fadeInRight'
+                  data-wow-duration='1s'
+                  data-wow-delay='0.5s'
+                >
+                  <div className='about-right-content'>
+                    <div className='section-heading'>
+                      <h6>Sobre nós</h6>
+                      <h4>
+                        Descubra o Mundo <em>CraftHub</em>
+                      </h4>
+                      <div className='line-dec'></div>
+                    </div>
+                    <p>
+                      Fundada em 2022, a CraftHub nasceu da paixão por conectar
+                      talentos e necessidades. Nossos princípios são enraizados
+                      na transparência, confiabilidade e excelência. Acreditamos
+                      em criar uma comunidade onde prestadores e clientes possam
+                      prosperar juntos, com respeito mútuo e comprometimento com
+                      a qualidade. Na CraftHub, estamos dedicados a simplificar
+                      o processo de encontrar e oferecer serviços, promovendo
+                      relações positivas e duradouras.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

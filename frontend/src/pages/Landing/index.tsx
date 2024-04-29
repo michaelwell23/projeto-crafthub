@@ -14,35 +14,62 @@ const Landing = () => {
   return (
     <>
       <Header />
-      <section className='page-landing'>
-        <div className='container'>
-          <div className='landing-text'>
-            <span>
-              Conectando você aos melhores profissionais, de forma rápida e
-              simples"
-            </span>
-            <h1>Encontre os melhores profissionais para suas necessidades</h1>
-            <p>
-              Com apenas alguns cliques, você pode encontrar o profissional que
-              deseja, tudo sem complicações.
-            </p>
 
-            <div className='container-buttons'>
-              <button className='professional'>
-                <img src={searchIcon} alt='' />
-                Para clientes
-              </button>
-              <button className='create'>
-                <img src={add} alt='' />
-                Para profissionais
-              </button>
+      <div
+        className='main-banner wow fadeIn'
+        id='top'
+        data-wow-duration='1s'
+        data-wow-delay='0.5s'
+      >
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='row'>
+                <div className='col-lg-6 align-self-center'>
+                  <div
+                    className='left-content show-up header-text wow fadeInLeft'
+                    data-wow-duration='1s'
+                    data-wow-delay='1s'
+                  >
+                    <div className='row'>
+                      <div className='col-lg-12'>
+                        <h6>Encontre, Contrate, Conecte.</h6>
+                        <h2>Conectando Prestadores e Clientes</h2>
+                        <p>
+                          CraftHub facilita a busca e contratação de prestadores
+                          de serviço, conectando você aos profissionais certos
+                          para cada necessidade. Simplifique sua busca, encontre
+                          soluções confiáveis!
+                        </p>
+                      </div>
+                      <div className='col-lg-12'></div>
+                      <div className='border-first-button scroll-to-section'>
+                        <Link to='#' className='providers-search'>
+                          <img src={searchIcon} alt='' />
+                          Procurar Prestador
+                        </Link>
+                        <Link to='#contact' className='providers-create'>
+                          <img src={add} alt='' />
+                          Cadastrar Prestrador
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-lg-6'>
+                  <div
+                    className='right-image wow fadeInRight'
+                    data-wow-duration='1s'
+                    data-wow-delay='0.5s'
+                  >
+                    <img src={landing} alt='' />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className='landing-ilustra'>
-            <img src={landing} alt='ilustração de pessoas limpando' />
-          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };

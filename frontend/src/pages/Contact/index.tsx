@@ -7,7 +7,7 @@ const FaqPage = () => {
     <>
       <Header />
 
-      <h1>Faq</h1>
+      <h1>Contact</h1>
     </>
   );
 };

@@ -16,58 +16,27 @@ const ServicesPage = () => {
   return (
     <>
       <Header />
-      <section className='services'>
+
+      <div id='services' className='our-services section'>
         <div className='container'>
-          <div className='ilustra-section'>
-            <img src={ServiceImg} alt='' />
-            <h3>Utilizar o CraftHub é simples e conveniente. </h3>
-            <p>
-              Utilizar o CraftHub é simples e conveniente. Basta pesquisar o
-              serviço desejado, explorar os perfis dos profissionais, entrar em
-              contato diretamente via WhatsApp e discutir os detalhes do
-              serviço. Após a conclusão, deixe uma avaliação para ajudar outros
-              usuários. Experimente hoje e descubra como podemos tornar a
-              contratação de serviços mais fácil e rápida para você!
-            </p>
-          </div>
-          <div className='services-list'>
-            <h3>
-              Busque pelo profissional ideal de acordo com a sua necessidade
-            </h3>
-            <p>
-              Abaixo você pode conferir alguns profissionais que você pode
-              encontrar na plataforma.
-            </p>
-            <ul>
-              <li>
-                <img src={cozinheiro} alt='' />
-                <p>Cozinheiros</p>
-              </li>
-              <li>
-                <img src={carpinteiro} alt='' />
-                <p>Carpinteiros</p>
-              </li>
-              <li>
-                <img src={eletricista} alt='' />
-                <p>Eletricistas</p>
-              </li>
-              <li>
-                <img src={detetizador} alt='' />
-                <p>Detetizadores</p>
-              </li>
-              <li>
-                <img src={encanador} alt='' />
-                <p>Encanadores</p>
-              </li>
-              <li>
-                <img src={faxineira} alt='' />
-                <p>Faxineiros</p>
-              </li>
-            </ul>
-            <p className='footer-text'>E muito outros profissionai!</p>
+          <div className='row'>
+            <div className='col-lg-5'>
+              <div
+                className='section-heading wow fadeInLeft'
+                data-wow-duration='1s'
+                data-wow-delay='0.3s'
+              >
+                <h6>Serviços</h6>
+                <h4>
+                  Alguns Serviços da <em>CraftHub</em>
+                </h4>
+                <div className='line-dec'></div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+        {/* CARDS */}
+      </div>
     </>
   );
 };

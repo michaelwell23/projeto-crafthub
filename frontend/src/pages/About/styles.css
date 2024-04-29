@@ -1,28 +1,249 @@
-.page-about {
-  padding: 6.9rem 8rem 0;
+#about {
+  padding-top: 130px;
 }
 
-.about-text {
-  width: 56.4rem;
+.about-left-image img {
+  margin-right: 45px;
 }
 
-.about-text h2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 3.8rem;
+.about-right-content p {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.skills-content {
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 110px 0px 50px 0px;
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+.progress:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #fd6a54;
+}
+
+.first-skill-item .progress .progress-bar {
+  border-color: #ff725e;
+}
+
+.second-skill-item .progress .progress-bar {
+  border-color: #726ae3;
+}
+
+.third-skill-item .progress .progress-bar {
+  border-color: #f58b56;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+.progress .progress-value {
+  text-align: center;
+  color: #2a2a2a;
+  display: flex;
+  width: 100%;
+  border-radius: 50%;
+  font-size: 35px;
+  text-align: center;
+  line-height: 25px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   font-weight: 700;
-  padding-bottom: 2rem;
+}
+.progress .progress-value div {
+  margin-top: 10px;
+}
+.progress .progress-value span {
+  font-size: 18px;
+  text-transform: none;
+  color: #afafaf;
+  font-weight: 300;
 }
 
-.about-text p {
-  font-size: 1.8rem;
-  color: #686868;
+/* This for loop creates the  necessary css animation names
+Due to the split circle of progress-left and progress right, we must use the animations on each side.
+*/
+.progress[data-percentage='10'] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage='10'] .progress-left .progress-bar {
+  animation: 0;
 }
 
-.about-text p span {
-  color: var(--color-primary);
+.progress[data-percentage='20'] .progress-right .progress-bar {
+  animation: loading-2 1.5s linear forwards;
+}
+.progress[data-percentage='20'] .progress-left .progress-bar {
+  animation: 0;
 }
 
-.about-ilustra img {
-  max-width: 54.8rem;
-  border-radius: 8px;
+.progress[data-percentage='30'] .progress-right .progress-bar {
+  animation: loading-3 1.5s linear forwards;
+}
+.progress[data-percentage='30'] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage='40'] .progress-right .progress-bar {
+  animation: loading-4 1.5s linear forwards;
+}
+.progress[data-percentage='40'] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage='50'] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage='50'] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage='60'] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage='60'] .progress-left .progress-bar {
+  animation: loading-1 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage='70'] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage='70'] .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage='80'] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage='80'] .progress-left .progress-bar {
+  animation: loading-3 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage='90'] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage='90'] .progress-left .progress-bar {
+  animation: loading-4 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage='100'] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage='100'] .progress-left .progress-bar {
+  animation: loading-5 1.5s linear forwards 1.5s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+.progress {
+  margin-bottom: 1em;
 }
