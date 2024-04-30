@@ -28,7 +28,7 @@
   top: 60px;
   width: 1159px;
   height: 797px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .main-banner .left-content {

@@ -13,7 +13,7 @@ function Routes() {
         <Route path='/' exact component={Landing} />
         <Route path='/about' component={About} />
         <Route path='/services' component={Services} />
-        <Route path='/faq' component={Contact} />
+        <Route path='/contact' component={Contact} />
       </BrowserRouter>
     </>
   );

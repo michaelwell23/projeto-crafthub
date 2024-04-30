@@ -66,18 +66,12 @@
 
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
-  padding-left: 40px;
 }
 
 .header-area .main-nav .nav li:last-child a,
 .background-header .main-nav .nav li:last-child a {
-  padding: 0px 20px !important;
+  padding: 0px 20px 0 0 !important;
   font-weight: 400;
-}
-
-.header-area .main-nav .nav li:last-child a:hover,
-.background-header .main-nav .nav li:last-child a:hover {
-  color: #fff !important;
 }
 
 .header-area .main-nav .nav li a {

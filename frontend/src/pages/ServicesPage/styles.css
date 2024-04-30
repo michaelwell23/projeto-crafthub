@@ -1,10 +1,20 @@
-.our-services {
-  padding-top: 130px;
+.our-portfolio {
+  padding-top: 180px;
+  padding-bottom: 50px;
   overflow: hidden;
-  /* position: relative; */
+  position: relative;
 }
 
-.our-services:before {
+.our-portfolio .container p {
+  position: relative;
+  color: #2a2a2a;
+
+  margin-bottom: 40px;
+
+  z-index: 20;
+}
+
+.our-portfolio:before {
   content: '';
   background-image: url('../../assets/images/services-right-dec.jpg');
   background-repeat: no-repeat;
@@ -16,7 +26,7 @@
   z-index: 1;
 }
 
-.our-services:after {
+.our-portfolio:after {
   content: '';
   background-image: url('../../assets/images/services-left-dec.jpg');
   background-repeat: no-repeat;
@@ -28,45 +38,51 @@
   z-index: 1;
 }
 
-.our-services .section-heading {
-  margin-bottom: 80px;
+.our-portfolio .section-heading {
+  margin-bottom: 40px;
 }
 
-.our-services .container-fluid {
+.our-portfolio .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
   z-index: 2;
 }
 
-.our-services .item {
+.our-portfolio .item {
   position: relative;
   z-index: 222;
 }
 
-.services-item {
+.portfolio-item {
   border-radius: 25px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   margin: 15px;
 }
 
-.services-item .thumb {
+.portfolio-item .thumb {
   position: relative;
   border-radius: 50px;
 }
 
-.services-item:hover .down-content h4,
-.services-item:hover .down-content span {
+.portfolio-item:hover .down-content h4,
+.portfolio-item:hover .down-content span {
   color: #fa65b1;
 }
 
-.services-item .thumb img {
+.portfolio-item .thumb img {
+  width: 50% !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+
+  padding: 30px 0 !important;
+
   border-top-right-radius: 23px;
   border-top-left-radius: 23px;
   overflow: hidden;
 }
 
-.services-item .down-content {
+.portfolio-item .down-content {
   background-color: #fff;
   text-align: center;
   padding: 18px 0px;
@@ -74,7 +90,7 @@
   border-bottom-left-radius: 23px;
 }
 
-.services-item .down-content h4 {
+.portfolio-item .down-content h4 {
   font-size: 20px;
   font-weight: 700;
   color: #2a2a2a;
@@ -82,13 +98,13 @@
   transition: all 0.3s;
 }
 
-.services-item .down-content span {
+.portfolio-item .down-content span {
   font-size: 15px;
   color: #afafaf;
   transition: all 0.3s;
 }
 
-.our-services .owl-nav {
+.our-portfolio .owl-nav {
   display: inline-block !important;
   position: absolute;
   top: -125px;
@@ -96,11 +112,11 @@
   max-width: 1320px;
 }
 
-.our-services .owl-nav .owl-next {
+.our-portfolio .owl-nav .owl-next {
   margin-left: 10px;
 }
 
-.our-services .owl-nav span {
+.our-portfolio .owl-nav span {
   width: 46px;
   height: 46px;
   display: inline-block;
@@ -113,7 +129,7 @@
   transition: all 0.5s;
 }
 
-.our-services .owl-nav span:hover {
+.our-portfolio .owl-nav span:hover {
   color: #fff;
   background-color: #fa65b1;
 }
