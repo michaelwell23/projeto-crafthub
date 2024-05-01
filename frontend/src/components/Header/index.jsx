@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import WOW from 'wowjs';
 import { Link, useLocation } from 'react-router-dom';
 import 'animate.css';
+
 import './style.css';
 
 import logo from '../../assets/images/logo.png';
@@ -12,6 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     setCurrentPage(location.pathname);
+
     const wow = new WOW.WOW({
       animateClass: 'animated',
       offset: 50,

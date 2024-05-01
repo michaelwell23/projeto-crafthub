@@ -5,6 +5,8 @@ import Landing from './pages/Landing';
 import About from './pages/About';
 import Services from './pages/ServicesPage';
 import Contact from './pages/Contact';
+import ProviderList from './pages/ProviderList';
+import ProviderForm from './pages/ProviderForm';
 
 function Routes() {
   return (
@@ -14,6 +16,9 @@ function Routes() {
         <Route path='/about' component={About} />
         <Route path='/services' component={Services} />
         <Route path='/contact' component={Contact} />
+
+        <Route path='/search-provider' component={ProviderList} />
+        <Route path='/register-provider' component={ProviderForm} />
       </BrowserRouter>
     </>
   );

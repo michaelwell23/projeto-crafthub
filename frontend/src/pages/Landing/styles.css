@@ -28,17 +28,19 @@
   top: 60px;
   width: 1159px;
   height: 797px;
-  z-index: -1;
+  z-index: 1;
 }
 
-.main-banner .left-content {
-  margin-right: 15px;
+.main-banner .left-content,
+.main-banner .right-image,
+.main-banner .border-first-button {
+  position: relative;
+  z-index: 2;
 }
 
 .main-banner .left-content h6 {
   position: relative;
-  z-index: 20;
-
+  z-index: 2;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 700;
@@ -49,7 +51,7 @@
 
 .main-banner .left-content h2 {
   position: relative;
-  z-index: 20;
+  z-index: 2;
   font-weight: 700;
   font-size: 50px;
   color: #2a2a2a;
@@ -58,26 +60,19 @@
 
 .main-banner .left-content p {
   position: relative;
-  z-index: 20;
-
+  z-index: 2;
   margin-bottom: 30px;
   margin-right: 45px;
 }
 
 .main-banner .right-image {
   text-align: right;
-  position: relative;
-  z-index: 20;
 }
 
 .main-banner .border-first-button {
-  position: relative;
-
   display: flex;
   align-items: center;
   gap: 20px;
-
-  z-index: 20;
 }
 
 .main-banner .border-first-button a img {

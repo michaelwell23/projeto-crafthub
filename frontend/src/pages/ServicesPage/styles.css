@@ -1,11 +1,11 @@
-.our-portfolio {
+.our-services {
   padding-top: 180px;
   padding-bottom: 50px;
   overflow: hidden;
   position: relative;
 }
 
-.our-portfolio .container p {
+.our-services .container p {
   position: relative;
   color: #2a2a2a;
 
@@ -14,7 +14,7 @@
   z-index: 20;
 }
 
-.our-portfolio:before {
+.our-services:before {
   content: '';
   background-image: url('../../assets/images/services-right-dec.jpg');
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
   z-index: 1;
 }
 
-.our-portfolio:after {
+.our-services:after {
   content: '';
   background-image: url('../../assets/images/services-left-dec.jpg');
   background-repeat: no-repeat;
@@ -38,39 +38,39 @@
   z-index: 1;
 }
 
-.our-portfolio .section-heading {
+.our-services .section-heading {
   margin-bottom: 40px;
 }
 
-.our-portfolio .container-fluid {
+.our-services .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
   z-index: 2;
 }
 
-.our-portfolio .item {
+.our-services .item {
   position: relative;
   z-index: 222;
 }
 
-.portfolio-item {
+.services-item {
   border-radius: 25px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   margin: 15px;
 }
 
-.portfolio-item .thumb {
+.services-item .thumb {
   position: relative;
   border-radius: 50px;
 }
 
-.portfolio-item:hover .down-content h4,
-.portfolio-item:hover .down-content span {
+.services-item:hover .down-content h4,
+.services-item:hover .down-content span {
   color: #fa65b1;
 }
 
-.portfolio-item .thumb img {
+.services-item .thumb img {
   width: 50% !important;
   align-items: center !important;
   margin: 0 auto !important;
@@ -82,7 +82,7 @@
   overflow: hidden;
 }
 
-.portfolio-item .down-content {
+.services-item .down-content {
   background-color: #fff;
   text-align: center;
   padding: 18px 0px;
@@ -90,7 +90,7 @@
   border-bottom-left-radius: 23px;
 }
 
-.portfolio-item .down-content h4 {
+.services-item .down-content h4 {
   font-size: 20px;
   font-weight: 700;
   color: #2a2a2a;
@@ -98,13 +98,13 @@
   transition: all 0.3s;
 }
 
-.portfolio-item .down-content span {
+.services-item .down-content span {
   font-size: 15px;
   color: #afafaf;
   transition: all 0.3s;
 }
 
-.our-portfolio .owl-nav {
+.our-services .owl-nav {
   display: inline-block !important;
   position: absolute;
   top: -125px;
@@ -112,11 +112,11 @@
   max-width: 1320px;
 }
 
-.our-portfolio .owl-nav .owl-next {
+.our-services .owl-nav .owl-next {
   margin-left: 10px;
 }
 
-.our-portfolio .owl-nav span {
+.our-services .owl-nav span {
   width: 46px;
   height: 46px;
   display: inline-block;
@@ -129,7 +129,7 @@
   transition: all 0.5s;
 }
 
-.our-portfolio .owl-nav span:hover {
+.our-services .owl-nav span:hover {
   color: #fff;
   background-color: #fa65b1;
 }

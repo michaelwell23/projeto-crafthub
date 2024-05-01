@@ -39,7 +39,7 @@ const ServicesPage = () => {
     <>
       <Header />
 
-      <div id='portfolio' className='our-portfolio section'>
+      <div id='services' className='our-services section'>
         <div className='container wow fadeInLeft'>
           <div className='row'>
             <div className='col-lg-5'>
@@ -73,7 +73,7 @@ const ServicesPage = () => {
               <OwlCarousel className='owl-theme loop owl-carousel' {...options}>
                 <div className='item'>
                   <a href='#'>
-                    <div className='portfolio-item'>
+                    <div className='services-item'>
                       <div className='thumb'>
                         <img src={cozinheiro} alt='' />
                       </div>
@@ -85,7 +85,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='item'>
                   <a href='#'>
-                    <div className='portfolio-item'>
+                    <div className='services-item'>
                       <div className='thumb'>
                         <img src={carpinteiro} alt='' />
                       </div>
@@ -97,7 +97,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='item'>
                   <a href='#'>
-                    <div className='portfolio-item'>
+                    <div className='services-item'>
                       <div className='thumb'>
                         <img src={eletricista} alt='' />
                       </div>
@@ -109,7 +109,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='item'>
                   <a href='#'>
-                    <div className='portfolio-item'>
+                    <div className='services-item'>
                       <div className='thumb'>
                         <img src={detetizador} alt='' />
                       </div>
@@ -121,7 +121,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='item'>
                   <a href='#'>
-                    <div className='portfolio-item'>
+                    <div className='services-item'>
                       <div className='thumb'>
                         <img src={encanador} alt='' />
                       </div>
@@ -133,7 +133,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='item'>
                   <a href='#'>
-                    <div className='portfolio-item'>
+                    <div className='services-item'>
                       <div className='thumb'>
                         <img src={faxineira} alt='' />
                       </div>

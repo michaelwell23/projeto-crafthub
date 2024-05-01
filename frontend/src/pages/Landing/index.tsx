@@ -44,11 +44,17 @@ const Landing = () => {
                       </div>
                       <div className='col-lg-12'></div>
                       <div className='border-first-button scroll-to-section'>
-                        <Link to='#' className='providers-search'>
+                        <Link
+                          to='/search-provider'
+                          className='providers-search'
+                        >
                           <img src={searchIcon} alt='' />
                           Procurar Prestador
                         </Link>
-                        <Link to='#contact' className='providers-create'>
+                        <Link
+                          to='/register-provider'
+                          className='providers-create'
+                        >
                           <img src={add} alt='' />
                           Cadastrar Prestrador
                         </Link>

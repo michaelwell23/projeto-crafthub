@@ -1,5 +1,6 @@
 // IMPORT CSS
 import './css/animated.css';
+import './css/responsive.css';
 import './css/owl.css';
 import './css/global.css';
 import './css/reset.css';
