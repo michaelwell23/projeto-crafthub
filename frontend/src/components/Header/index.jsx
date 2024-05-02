@@ -4,8 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 import 'animate.css';
 
 import './style.css';
-
 import logo from '../../assets/images/logo.png';
+
+import ArrowBack from '../../assets/images/icons/back.svg';
 
 const Header = () => {
   const [currentPage, setCurrentPage] = useState('/');
@@ -13,7 +14,6 @@ const Header = () => {
 
   useEffect(() => {
     setCurrentPage(location.pathname);
-
     const wow = new WOW.WOW({
       animateClass: 'animated',
       offset: 50,
@@ -21,13 +21,21 @@ const Header = () => {
     wow.init();
   }, [location]);
 
-  return (
-    <>
-      <header
-        className='header-area header-sticky wow slideInDown'
-        data-wow-duration='0.75s'
-        data-wow-delay='0s'
-      >
+  const renderHeaderContent = () => {
+    if (
+      currentPage === '/search-provider' ||
+      currentPage === '/register-provider'
+    ) {
+      return (
+        <div className='container logo-container'>
+          <Link to='/'>
+            <img src={ArrowBack} alt='Logo CraftHub' />
+          </Link>
+          <img className='logo-img' src={logo} alt='Logo CraftHub' />
+        </div>
+      );
+    } else {
+      return (
         <div className='container'>
           <div className='row'>
             <div className='col-12'>
@@ -92,8 +100,18 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </header>
-    </>
+      );
+    }
+  };
+
+  return (
+    <header
+      className='header-area header-sticky wow slideInDown'
+      data-wow-duration='0.75s'
+      data-wow-delay='0s'
+    >
+      {renderHeaderContent()}
+    </header>
   );
 };
 

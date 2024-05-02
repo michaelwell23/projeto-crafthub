@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 
-const Input: React.FC = () => {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+}
+
+const Input: React.FC<InputProps> = ({ name, ...rest }) => {
   return (
     <>
-      <fieldset>
-        <input type='name' name='name' id='name' placeholder='Name' required />
-      </fieldset>
+      <input type='text' id={name} {...rest} />
     </>
   );
 };

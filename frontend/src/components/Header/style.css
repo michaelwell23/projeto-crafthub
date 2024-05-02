@@ -1,3 +1,19 @@
+.logo-container {
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container a img {
+  width: 80px;
+}
+
+.logo-container .logo-img {
+  width: 180px;
+}
+
 .header-area {
   background-color: #fff;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.03);

@@ -1,15 +1,15 @@
 .provider-form-us {
-  padding-top: 60px;
+  padding-top: 180px;
 }
 
 .provider-form-us::after {
-  background-image: url('../../assets/images/form-bg.jpg');
+  background-color: #f5effc;
   position: absolute;
 
   right: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 600px;
   background-repeat: no-repeat;
   content: '';
   z-index: 1;
@@ -22,14 +22,6 @@
 
   position: relative;
   z-index: 10;
-}
-
-.provider-form-us .link-back img {
-  width: 120px;
-}
-
-.provider-form-us header .logo {
-  width: 180px;
 }
 
 .provider-form-us .section-heading .line-dec {
@@ -53,7 +45,7 @@
 }
 
 form#provider-form:before {
-  /* background-image: url('../../assets/images/provider-form-top-right.png'); */
+  background-image: url('../../assets/images/contact-top-right.png');
   position: absolute;
 
   right: 0;
@@ -73,7 +65,7 @@ form#provider-form:before {
 }
 
 form#provider-form:after {
-  /* background-image: url('../../assets/images/provider-form-bottom-right\ copy.png'); */
+  background-image: url('../../assets/images/contact-bottom-right.png');
   position: absolute;
   right: 0;
   bottom: 0;
@@ -134,7 +126,26 @@ form#provider-form #map iframe {
   color: #fa65b1;
 }
 
+form#provider-form legend {
+  padding-top: 40px;
+  justify-content: left;
+}
+
 form#provider-form input {
+  width: 100%;
+  height: 46px;
+  background-color: transparent;
+  border: 1px solid #eee;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 20px;
+  border-radius: 23px;
+  margin-top: 30px;
+}
+
+form#provider-form select {
   width: 100%;
   height: 46px;
   background-color: transparent;
@@ -172,6 +183,36 @@ form#provider-form textarea {
 
 form#provider-form textarea::placeholder {
   color: #aaa;
+}
+
+form#provider-form fieldset:last-child legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+form#provider-form fieldset:last-child legend a {
+  color: #fa65b1;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  outline: none;
+}
+
+form#provider-form .schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form#provider-form .schedule-item input {
+  width: 25%;
 }
 
 form#provider-form button {

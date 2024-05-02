@@ -2,24 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
-
-import arrowLeft from '../../assets/images/icons/back.svg';
-import logo from '../../assets/images/logo.png';
+import Textarea from '../../components/Textarea';
+import Header from '../../components/Header';
+import Select from '../../components/Select';
 
 import './style.css';
 
 const ProviderForm = () => {
   return (
     <>
+      <Header />
       <div id='provider-form' className='provider-form-us section'>
         <div className='container'>
-          <header>
-            <Link to='/' className='link-back'>
-              <img className='back' src={arrowLeft} alt='' />
-            </Link>
-
-            <img className='logo' src={logo} alt='' />
-          </header>
           <div className='row'>
             <div className='col-lg-6 offset-lg-3'>
               <div
@@ -35,13 +29,13 @@ const ProviderForm = () => {
               </div>
             </div>
             <div
-              className='container-form col-lg-12 wow fadeInUp'
+              className='container-form col-lg-8 wow fadeInUp'
               data-wow-duration='0.5s'
               data-wow-delay='0.25s'
             >
               <form id='provider-form' action='' method='post'>
                 <div className='row'>
-                  <div className='col-lg-12'>
+                  <div className='col-lg-6'>
                     <div className='provider-form-dec'>
                       <img src='assets/images/provider-form-dec.png' alt='' />
                     </div>
@@ -50,12 +44,80 @@ const ProviderForm = () => {
                     <div className='fill-form'>
                       <div className='row'>
                         <div className='col-lg-'>
-                          <Input />
-                          <Input />
-                          <Input />
-                          <Input />
-                          <Input />
-                          <Input />
+                          <fieldset>
+                            <legend>Seus dados</legend>
+
+                            <Input name='name' placeholder='Nome Completo' />
+                            <Input name='avatar' placeholder='Avatar' />
+                            <Input name='whatsapp' placeholder='Whatsapp' />
+                            <Textarea
+                              name='biografia'
+                              className='form-control'
+                              id='message'
+                              placeholder='Escreva sobre seu trabalho'
+                            />
+                          </fieldset>
+                          <fieldset>
+                            <legend>Dados do serviço</legend>
+
+                            <Select
+                              name='subject'
+                              label='Matéria'
+                              options={[
+                                { value: 'Artes', label: 'Artes' },
+                                { value: 'Biologia', label: 'Biologia' },
+                                { value: 'Ciências', label: 'Ciências' },
+                                {
+                                  value: 'Educação física',
+                                  label: 'Educação física',
+                                },
+                                { value: 'Física', label: 'Física' },
+                                { value: 'Geografia', label: 'Geografia' },
+                                { value: 'História', label: 'História' },
+                                { value: 'Matemática', label: 'Matemática' },
+                                { value: 'Português', label: 'Português' },
+                                { value: 'Química', label: 'Química' },
+                              ]}
+                            />
+
+                            <Input
+                              name='coast'
+                              placeholder='Custo do Serviço (Diária)'
+                            />
+                          </fieldset>
+                          <fieldset>
+                            <legend>
+                              Horários disponíveis
+                              <a type='button'>+ Novo horário</a>
+                            </legend>
+
+                            <div className='schedule-item'>
+                              <Select
+                                className='col-lg-6'
+                                name='week_day'
+                                label='Dia da semana'
+                                options={[
+                                  { value: '0', label: 'Domingo' },
+                                  { value: '1', label: 'Segunda-feira' },
+                                  { value: '2', label: 'Terça-feira' },
+                                  { value: '3', label: 'Quarta-feira' },
+                                  { value: '4', label: 'Quinta-feira' },
+                                  { value: '5', label: 'Sexta-feira' },
+                                  { value: '6', label: 'Sábado' },
+                                ]}
+                              />
+                              <Input
+                                className='col-lg-3'
+                                name='from'
+                                type='time'
+                              />
+                              <Input
+                                className='col-lg-3'
+                                name='to'
+                                type='time'
+                              />
+                            </div>
+                          </fieldset>
                         </div>
                         <div className='col-lg-12'>
                           <fieldset>
@@ -64,7 +126,7 @@ const ProviderForm = () => {
                               id='form-submit'
                               className='main-button '
                             >
-                              Send Message Now
+                              Salvar Cadastro
                             </button>
                           </fieldset>
                         </div>
