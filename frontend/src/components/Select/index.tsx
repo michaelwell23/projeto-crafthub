@@ -1,5 +1,7 @@
 import React, { SelectHTMLAttributes } from 'react';
 
+import './style.css';
+
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   name: string;
   label: string;

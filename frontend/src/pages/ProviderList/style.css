@@ -1,66 +1,41 @@
-.blog-post {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
+.provider-list:before {
+  content: '';
+
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 961px;
+  height: 1020px;
+  z-index: 0;
 }
 
-.blog-post .thumb img {
-  border-top-right-radius: 23px;
-  border-top-left-radius: 23px;
+.provider-list {
+  position: relative;
+  padding-top: 130px;
 }
 
-.blog-post .down-content {
-  border-bottom-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  background-color: #fff;
-  padding: 30px;
+.provider-list .section-heading {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
-.blog-post .down-content span.category {
-  font-size: 15px;
-  color: #fff;
-  padding: 8px 12px;
-  background-color: #726ae3;
-  border-radius: 18px;
-  display: inline-block;
+.provider-list .section-heading .line-dec {
+  margin: 0 auto;
 }
 
-.blog-post .down-content span.date {
-  font-size: 15px;
-  color: #afafaf;
-  text-align: right;
-  float: right;
-  margin-top: 4px;
+.provider-list .show-up {
+  position: relative;
+  z-index: 200;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
-.blog-post .down-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a2a2a;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 30px;
-}
+.provider-list #search-teachers {
+  width: 100%;
+  display: flex;
 
-.blog-post .down-content p {
-  margin-bottom: 30px;
-}
-
-.blog-post .down-content span.author {
-  font-size: 15px;
-  color: #2a2a2a;
-}
-
-.blog-post .down-content span.author img {
-  max-width: 56px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.blog-post .down-content .border-first-button {
-  display: inline-block;
-  float: right;
-}
-
-.blog-posts {
-  margin-left: 30px;
+  padding-bottom: 0px;
 }
