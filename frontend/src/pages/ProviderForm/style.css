@@ -1,5 +1,6 @@
 .provider-form-us {
   padding-top: 180px;
+  padding-bottom: 90px;
 }
 
 .provider-form-us::after {
@@ -143,10 +144,26 @@ form#provider-form fieldset:last-child legend a {
   outline: none;
 }
 
+form#provider-form .personal-data input {
+  margin-bottom: 15px;
+}
+
+form#provider-form .service-coast select {
+  margin-bottom: 20px;
+}
+
 form#provider-form .schedule-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding-top: 20px;
+}
+
+form#provider-form .schedule-item select {
+  width: 440px;
 }
 
 form#provider-form .schedule-item input {

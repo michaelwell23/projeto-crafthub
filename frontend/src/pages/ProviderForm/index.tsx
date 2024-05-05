@@ -47,43 +47,47 @@ const ProviderForm = () => {
                           <fieldset>
                             <legend>Seus dados</legend>
 
-                            <Input name='name' placeholder='Nome Completo' />
-                            <Input name='avatar' placeholder='Avatar' />
-                            <Input name='whatsapp' placeholder='Whatsapp' />
-                            <Textarea
-                              name='biografia'
-                              className='form-control'
-                              id='message'
-                              placeholder='Escreva sobre seu trabalho'
-                            />
+                            <div className='personal-data'>
+                              <Input name='name' placeholder='Nome Completo' />
+                              <Input name='avatar' placeholder='Avatar' />
+                              <Input name='whatsapp' placeholder='Whatsapp' />
+                              <Textarea
+                                name='biografia'
+                                className='form-control'
+                                id='message'
+                                placeholder='Escreva sobre seu trabalho'
+                              />
+                            </div>
                           </fieldset>
                           <fieldset>
                             <legend>Dados do serviço</legend>
 
-                            <Select
-                              name='subject'
-                              label='Matéria'
-                              options={[
-                                { value: 'Artes', label: 'Artes' },
-                                { value: 'Biologia', label: 'Biologia' },
-                                { value: 'Ciências', label: 'Ciências' },
-                                {
-                                  value: 'Educação física',
-                                  label: 'Educação física',
-                                },
-                                { value: 'Física', label: 'Física' },
-                                { value: 'Geografia', label: 'Geografia' },
-                                { value: 'História', label: 'História' },
-                                { value: 'Matemática', label: 'Matemática' },
-                                { value: 'Português', label: 'Português' },
-                                { value: 'Química', label: 'Química' },
-                              ]}
-                            />
-
-                            <Input
-                              name='coast'
-                              placeholder='Custo do Serviço (Diária)'
-                            />
+                            <div className='service-coast'>
+                              {' '}
+                              <Select
+                                name='subject'
+                                label='Matéria'
+                                options={[
+                                  { value: 'Artes', label: 'Artes' },
+                                  { value: 'Biologia', label: 'Biologia' },
+                                  { value: 'Ciências', label: 'Ciências' },
+                                  {
+                                    value: 'Educação física',
+                                    label: 'Educação física',
+                                  },
+                                  { value: 'Física', label: 'Física' },
+                                  { value: 'Geografia', label: 'Geografia' },
+                                  { value: 'História', label: 'História' },
+                                  { value: 'Matemática', label: 'Matemática' },
+                                  { value: 'Português', label: 'Português' },
+                                  { value: 'Química', label: 'Química' },
+                                ]}
+                              />
+                              <Input
+                                name='coast'
+                                placeholder='Custo do Serviço (Diária)'
+                              />
+                            </div>
                           </fieldset>
                           <fieldset>
                             <legend>
@@ -93,7 +97,7 @@ const ProviderForm = () => {
 
                             <div className='schedule-item'>
                               <Select
-                                className='col-lg-6'
+                                className='col-lg-8'
                                 name='week_day'
                                 label='Dia da semana'
                                 options={[
@@ -107,12 +111,12 @@ const ProviderForm = () => {
                                 ]}
                               />
                               <Input
-                                className='col-lg-3'
+                                // className='col-lg-6'
                                 name='from'
                                 type='time'
                               />
                               <Input
-                                className='col-lg-3'
+                                // className='col-lg-6'
                                 name='to'
                                 type='time'
                               />

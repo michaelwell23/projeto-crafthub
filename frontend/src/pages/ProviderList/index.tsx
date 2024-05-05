@@ -15,14 +15,15 @@ const ProviderList = () => {
         <div className='container'>
           <div className='row'>
             <div
-              className='col-lg-4 offset-lg-4  wow fadeInDown'
+              className='wow fadeInDown'
               data-wow-duration='1s'
               data-wow-delay='0.3s'
             >
               <div className='section-heading'>
                 <h6>Recent News</h6>
                 <h4>
-                  Check Our provider-list <em>Posts</em>
+                  Check Our provider-list <br />
+                  <em>Posts</em>
                 </h4>
                 <div className='line-dec'></div>
               </div>
@@ -30,7 +31,8 @@ const ProviderList = () => {
               <form id='search-teachers' onSubmit={() => {}}>
                 <Select
                   name='subject'
-                  label='Matéria'
+                  className='col-lg-12'
+                  label='Selecione o a profissão que procura'
                   options={[
                     { value: 'Artes', label: 'Artes' },
                     { value: 'Biologia', label: 'Biologia' },
@@ -45,8 +47,9 @@ const ProviderList = () => {
                   ]}
                 />
                 <Select
+                  className='col-lg-12'
                   name='week_day'
-                  label='Dia da semana'
+                  label='Selecione o dia da semana'
                   options={[
                     { value: '0', label: 'Domingo' },
                     { value: '1', label: 'Segunda-feira' },
@@ -57,7 +60,7 @@ const ProviderList = () => {
                     { value: '6', label: 'Sábado' },
                   ]}
                 />
-                <Input type='time' name='time' />
+                <Input type='time' className='col-lg-2' name='time' />
 
                 <button type='submit'>Buscar</button>
               </form>
