@@ -9,109 +9,45 @@ import logo from '../../assets/images/logo.png';
 import ArrowBack from '../../assets/images/icons/back.svg';
 
 const Header = () => {
-  const [currentPage, setCurrentPage] = useState('/');
-  const location = useLocation();
-
-  useEffect(() => {
-    setCurrentPage(location.pathname);
-    const wow = new WOW.WOW({
-      animateClass: 'animated',
-      offset: 50,
-    });
-    wow.init();
-  }, [location]);
-
-  const renderHeaderContent = () => {
-    if (
-      currentPage === '/search-provider' ||
-      currentPage === '/register-provider'
-    ) {
-      return (
-        <div className='container logo-container'>
-          <Link to='/'>
-            <img src={ArrowBack} alt='Logo CraftHub' />
-          </Link>
-          <img className='logo-img' src={logo} alt='Logo CraftHub' />
-        </div>
-      );
-    } else {
-      return (
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <nav className='main-nav'>
-                <Link to='/' className='logo'>
-                  <img className='logo-img' src={logo} alt='Logo CraftHub' />
-                </Link>
-                <ul className='nav'>
-                  <li className={`scroll-to-section`}>
-                    <Link
-                      to='/'
-                      style={
-                        currentPage === '/'
-                          ? { color: '#ff725e' }
-                          : { color: '#2a2a2a' }
-                      }
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li className={`scroll-to-section`}>
-                    <Link
-                      to='/about'
-                      style={
-                        currentPage === '/about'
-                          ? { color: '#ff725e' }
-                          : { color: '#2a2a2a' }
-                      }
-                    >
-                      Sobre
-                    </Link>
-                  </li>
-                  <li className={`scroll-to-section`}>
-                    <Link
-                      to='/services'
-                      style={
-                        currentPage === '/services'
-                          ? { color: '#ff725e' }
-                          : { color: '#2a2a2a' }
-                      }
-                    >
-                      Serviços
-                    </Link>
-                  </li>
-                  <li className={`scroll-to-section`}>
-                    <Link
-                      to='/contact'
-                      style={
-                        currentPage === '/contact'
-                          ? { color: '#ff725e' }
-                          : { color: '#2a2a2a' }
-                      }
-                    >
-                      Contato
-                    </Link>
-                  </li>
-                </ul>
-                <Link className='menu-trigger'>
-                  <span>Menu</span>
-                </Link>
-              </nav>
-            </div>
-          </div>
-        </div>
-      );
-    }
-  };
-
   return (
-    <header
-      className='header-area header-sticky wow slideInDown'
-      data-wow-duration='0.75s'
-      data-wow-delay='0s'
-    >
-      {renderHeaderContent()}
-    </header>
+    <>
+      <nav class='navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0'>
+        <a href='index.html' class='navbar-brand p-0'>
+          <img src={logo} alt='Logo' />
+        </a>
+        <button
+          class='navbar-toggler'
+          type='button'
+          data-bs-toggle='collapse'
+          data-bs-target='#navbarCollapse'
+        >
+          <span class='fa fa-bars'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+          <div class='navbar-nav ms-auto py-0'>
+            <Link to='/' class='nav-item nav-link active'>
+              Home
+            </Link>
+            <Link to='/about' class='nav-item nav-link'>
+              About
+            </Link>
+            <Link to='/services' class='nav-item nav-link'>
+              Service
+            </Link>
+
+            <Link to='/contact' class='nav-item nav-link'>
+              Contact
+            </Link>
+          </div>
+          <a
+            href=''
+            class='btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5'
+          >
+            Login
+          </a>
+        </div>
+      </nav>
+    </>
   );
 };
 

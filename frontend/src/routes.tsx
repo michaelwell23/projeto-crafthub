@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-import Landing from './pages/Landing';
-import About from './pages/About';
-import Services from './pages/ServicesPage';
-import Contact from './pages/Contact';
+import Landing from './pages/PageHome';
+import About from './pages/PageAbout';
+import Services from './pages/PageServices';
+import Contact from './pages/PageContact';
 import ProviderList from './pages/ProviderList';
 import ProviderForm from './pages/ProviderForm';
 
