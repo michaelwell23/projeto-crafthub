@@ -1,3 +1,9 @@
+/*
+---------------------------------------------
+reset
+---------------------------------------------
+*/
+
 html,
 body,
 div,
@@ -157,7 +163,7 @@ ul {
 
 p {
   font-size: 15px;
-  /* line-height: 30px; */
+  line-height: 30px;
   font-weight: 300;
   color: #afafaf;
 }

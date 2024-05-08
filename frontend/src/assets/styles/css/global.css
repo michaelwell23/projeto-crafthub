@@ -1,75 +1,90 @@
-/********** Template CSS **********/
-:root {
-  --primary: #fc727b;
-  --light: #f3f6f8;
-  --dark: #0e2e50;
+/*
+---------------------------------------------
+global styles
+---------------------------------------------
+*/
+
+html,
+body {
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
-/*** Spinner ***/
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-  z-index: 99999;
+::selection {
+  background: #fa65b1;
+  color: #fff !important;
 }
 
-#spinner.show {
-  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
+::-moz-selection {
+  background: #fa65b1;
+  color: #fff !important;
 }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 45px;
-  bottom: 45px;
-  z-index: 99;
+@media (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
 }
 
-.my-6 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.page-section {
+  margin-top: 120px;
 }
 
-.py-6 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.section-heading {
+  position: relative;
+  z-index: 2;
 }
 
-/*** Button ***/
-.btn {
-  font-weight: 500;
-  transition: 0.5s;
+.section-heading h6 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #726ae3;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.btn.btn-primary,
-.btn.btn-outline-primary:hover {
-  color: #ffffff;
+.section-heading h4 {
+  color: #2a2a2a;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
 }
 
-.btn-square {
-  width: 38px;
-  height: 38px;
+.section-heading h4 em {
+  font-style: normal;
+  color: #726ae3;
 }
 
-.btn-sm-square {
-  width: 32px;
-  height: 32px;
+.section-heading .line-dec {
+  width: 50px;
+  height: 2px;
+  background-color: #726ae3;
 }
 
-.btn-lg-square {
-  width: 48px;
-  height: 48px;
+.border-first-button a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  color: #fa65b1 !important;
+  border: 1px solid #fa65b1 !important;
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all 0.5s;
 }
 
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: normal;
-  border-radius: 50px;
+.border-first-button a:hover {
+  background-color: #fa65b1;
+  color: #fff !important;
 }
