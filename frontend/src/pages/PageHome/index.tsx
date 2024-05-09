@@ -14,6 +14,67 @@ const Landing = () => {
   return (
     <>
       <Header />
+
+      <div
+        className='main-banner wow fadeIn'
+        id='top'
+        data-wow-duration='1s'
+        data-wow-delay='0.5s'
+      >
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='row'>
+                <div className='col-lg-6 align-self-center'>
+                  <div
+                    className='left-content show-up header-text wow fadeInLeft'
+                    data-wow-duration='1s'
+                    data-wow-delay='1s'
+                  >
+                    <div className='row'>
+                      <div className='col-lg-12'>
+                        <h6>Digital Media Agency</h6>
+                        <h2>We Boost Your Website Traffic</h2>
+                        <p>
+                          This template is brought to you by TemplateMo website.
+                          Feel free to use this for a commercial purpose. You
+                          are not allowed to redistribute the template ZIP file
+                          on any other template website. Thank you.
+                        </p>
+                      </div>
+                      <div className='col-lg-12'>
+                        <div className='border-first-button scroll-to-section'>
+                          <Link
+                            className='button_search_provider'
+                            to='/search-provider'
+                          >
+                            Busca um profissiona?
+                          </Link>
+                          <Link
+                            className='link_register_provider'
+                            to='/register-provider'
+                          >
+                            Você é um profissiona?
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-lg-6'>
+                  <div
+                    className='right-image wow fadeInRight'
+                    data-wow-duration='1s'
+                    data-wow-delay='0.5s'
+                  >
+                    <img src={landing} alt='' />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
