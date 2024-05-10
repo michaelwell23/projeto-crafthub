@@ -38,35 +38,26 @@ const About = () => {
                       <div className='line-dec'></div>
                     </div>
                     <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Quaerat dolorum fugit repellendus consectetur distinctio
-                      nisi dicta, porro, beatae sed hic laboriosam aperiam
-                      nesciunt laborum cumque tempora deserunt itaque?
-                      Cupiditate, quam.
-                      <a
-                        rel='nofollow noreferrer'
-                        href='http://paypal.me/templatemo'
-                        target='_blank'
-                      >
-                        Laudantium perspiciatis voluptatibus temporibus modi
-                        eius quae non. Delectus.
-                      </a>{' '}
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Maxime, et, officiis in ratione exercitationem architecto
-                      aspernatur nam repudiandae eos nesciunt, provident ad?
-                      Explicabo voluptatem alias et beatae aspernatur cumque
-                      inventore!
-                      <a
-                        href='https://templatemo.com/contact'
-                        target='_blank'
-                        rel='noreferrer'
-                      >
-                        support CraftHub
-                      </a>{' '}
-                      consectetur adipisicing elit. Nemo maiores expedita
-                      explicabo. Ea dolorem minus odit, rerum aspernatur,
-                      praesentium veritatis recusandae ducimus quae facilis
-                      consequatur libero voluptate itaque velit numquam?
+                      o CraftHub entra em cena para simplificar a sua busca por
+                      serviços confiáveis. Imagine poder encontrar rapidamente
+                      um faxineiro para deixar a sua casa impecável, um
+                      jardineiro para cuidar do seu jardim com expertise, um
+                      limpador de piscina para manter a sua área de lazer sempre
+                      pronta para uso, ou uma faxineira para ajudar nas tarefas
+                      domésticas. No CraftHub, tornamos essa busca fácil e
+                      conveniente. Com uma plataforma intuitiva e uma ampla gama
+                      de profissionais cadastrados, você pode encontrar
+                      exatamente o que precisa em apenas alguns cliques. Nossa
+                      comunidade é composta por profissionais habilidosos e
+                      comprometidos em oferecer um serviço de alta qualidade,
+                      para que você possa confiar em nós para cuidar das suas
+                      necessidades do dia a dia. Não importa se você está
+                      procurando por serviços esporádicos ou deseja estabelecer
+                      uma relação de longo prazo com um profissional de
+                      confiança, o CraftHub está aqui para ajudar. Simplifique a
+                      sua vida hoje mesmo e descubra como podemos tornar a busca
+                      por serviços essenciais uma experiência simples e sem
+                      complicações.
                     </p>
                   </div>
                 </div>

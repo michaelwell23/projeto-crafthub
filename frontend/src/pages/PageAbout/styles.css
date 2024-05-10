@@ -3,7 +3,9 @@
 }
 
 .about-left-image img {
-  margin-right: 45px;
+  padding-right: 45px;
+  padding-top: 120px;
+  width: 520px;
 }
 
 .about-right-content p {
