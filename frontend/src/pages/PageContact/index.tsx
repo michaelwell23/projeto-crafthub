@@ -43,9 +43,10 @@ const FaqPage = () => {
                   <div className='col-lg-5'>
                     <div id='map'>
                       <iframe
-                        src='https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed'
                         width='100%'
-                        height='636px'
+                        height='650'
+                        scrolling='no'
+                        src='https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=418%20R.%20Rodrigues%20Alves%20Salto,%20S%C3%A3o%20Paulo+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
                       ></iframe>
                     </div>
                   </div>
@@ -64,7 +65,7 @@ const FaqPage = () => {
                           <div className='info-post'>
                             <div className='icon'>
                               <img src={email} alt='' />
-                              <a href='#'>contato@crafthub.com</a>
+                              <a href='#'>crafthub@email.com</a>
                             </div>
                           </div>
                         </div>
@@ -72,7 +73,7 @@ const FaqPage = () => {
                           <div className='info-post'>
                             <div className='icon'>
                               <img src={location} alt='' />
-                              <a href='#'>123 Rio de Janeiro</a>
+                              <a href='#'>Salto, SP</a>
                             </div>
                           </div>
                         </div>

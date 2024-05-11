@@ -12,7 +12,6 @@ const ProviderForm = () => {
   return (
     <>
       <Header />
-      <h1>FORMULÁRIO DE CADASTRO</h1>
     </>
   );
 };
