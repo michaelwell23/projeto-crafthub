@@ -93,7 +93,7 @@ const Header = () => {
                     </Link>
                   </li>
                 </ul>
-                <Link className='menu-trigger'>
+                <Link className='menu-trigger' to={''}>
                   <span>Menu</span>
                 </Link>
               </nav>

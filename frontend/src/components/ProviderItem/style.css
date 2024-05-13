@@ -1,77 +1,125 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-.card-container {
-  background-color: #ffff;
-  border-radius: 5px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-  color: #b3b8cd;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.card {
+  max-width: 420px;
   position: relative;
-  width: 350px;
-  max-width: 100%;
-  text-align: center;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(243, 244, 246);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
 }
 
-.card-container p {
-  padding: 10px 20px;
-}
-
-.card-container .round {
-  width: 38%;
-
-  border: 1px solid #fd6a54;
-  border-radius: 50%;
-  padding: 7px;
-}
-
-.card-container .pro {
-  color: #231e39;
-  background-color: #febb0b;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3px 10px;
-  margin-bottom: 40px;
-}
-
-.card-container .price {
+.header {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  justify-content: space-between;
+  grid-gap: 1rem;
+  gap: 1rem;
 }
 
-.card-container .buttons {
+.provider-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-button.primary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.title {
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: rgba(17, 24, 39, 1);
+  text-decoration: none;
+  padding-bottom: 10px;
+}
 
-  gap: 10px;
+.title:hover {
+  text-decoration: underline royalblue;
+}
 
-  background-color: transparent;
-  border: 1px solid #25d366;
-  border-radius: 50px;
-  color: #25d366;
-  font-family: Montserrat, sans-serif;
+.job {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1rem;
   font-weight: 500;
-  padding: 10px 25px;
+  color: rgba(75, 85, 99, 1);
 
-  transition: background 0.5s ease;
+  text-align: center;
+
+  width: 105px;
+  background-color: yellow;
+  padding: 8px 5px;
+  border-radius: 20px;
 }
 
-button.primary:hover {
+.image {
+  display: block;
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  background-color: royalblue;
+}
+
+.image img {
+  border-radius: 0.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(107, 114, 128, 1);
+}
+
+.post-info {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.cr {
+  display: flex;
+  flex-direction: column;
+}
+
+.dt {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: rgba(75, 85, 99, 1);
+}
+
+.dd {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(107, 114, 128, 1);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact a {
+  font-size: 14px;
+  border: 1px solid #25d366;
+  color: #25d366;
+
+  border-radius: 20px;
+  padding: 8px;
+
+  transition: background-color 0.3s ease;
+}
+
+.contact a:hover {
   background-color: #25d366;
-  color: #ffff;
+  color: #fff;
 }
 
-/* button.primary img {
+.contact a img {
   width: 25px;
-} */
+  padding-right: 5px;
+}
