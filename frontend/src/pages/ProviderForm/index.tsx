@@ -51,9 +51,9 @@ const ProviderForm = () => {
                           </fieldset>
                           <fieldset>
                             <Input
-                              type='subject'
-                              name='subject'
-                              id='subject'
+                              type='text'
+                              name='avatar'
+                              id='subjetc'
                               placeholder='Imagem'
                             />
                           </fieldset>
@@ -62,7 +62,6 @@ const ProviderForm = () => {
                               type='text'
                               name='email'
                               id='email'
-                              pattern='[^ @]*@[^ @]*'
                               placeholder='Seu E-mail'
                             />
                           </fieldset>
@@ -70,7 +69,7 @@ const ProviderForm = () => {
                             <Input
                               type='phone'
                               name='whatsapp'
-                              id='subject'
+                              id='phone'
                               placeholder='Telefone (Whatsapp)'
                             />
                           </fieldset>
@@ -86,34 +85,45 @@ const ProviderForm = () => {
                         </div>
                         <div className='col-lg-12'>
                           <legend>Sobre o serviço</legend>
-                          <Select
-                            name=''
-                            label=''
-                            options={[
-                              { value: 'Artes', label: 'Artes' },
-                              { value: 'Biologia', label: 'Biologia' },
-                              { value: 'Ciências', label: 'Ciências' },
-                              {
-                                value: 'Educação física',
-                                label: 'Educação física',
-                              },
-                              { value: 'Física', label: 'Física' },
-                              { value: 'Geografia', label: 'Geografia' },
-                              { value: 'História', label: 'História' },
-                              { value: 'Matemática', label: 'Matemática' },
-                              { value: 'Português', label: 'Português' },
-                              { value: 'Química', label: 'Química' },
-                            ]}
-                          />
-
-                          <Input name='cost' />
-
                           <fieldset>
-                            <legend>Horários disponíveis</legend>
-
-                            <div className='col-lg-6 schedule-item'>
-                              <Input name='from' type='time' />
-                              <Input name='to' type='time' />
+                            <Select
+                              name=''
+                              label=''
+                              options={[
+                                { value: 'Encanador', label: 'Encanador' },
+                                { value: 'Faxineiro', label: 'Faxineiro' },
+                                {
+                                  value: 'Manutenção de ar condicionado',
+                                  label: 'Manutenção de ar condicionado',
+                                },
+                                { value: 'Jardineiro', label: 'Jardineiro' },
+                                {
+                                  value: 'Limpador de piscina',
+                                  label: 'Limpador de piscina',
+                                },
+                              ]}
+                            />
+                          </fieldset>
+                          <fieldset>
+                            <Input
+                              name='cost'
+                              type='number'
+                              id='cost'
+                              placeholder='valor do serviço'
+                            />
+                          </fieldset>
+                          <fieldset>
+                            <div className='col-lg-12 schedule-item'>
+                              <Input
+                                name='from'
+                                type='time'
+                                placeholder='Horario de inicio'
+                              />
+                              <Input
+                                name='to'
+                                type='time'
+                                placeholder='Horario de término'
+                              />
                             </div>
                           </fieldset>
                         </div>

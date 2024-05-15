@@ -11,12 +11,12 @@ body {
 }
 
 ::selection {
-  background: #fa65b1;
+  background: #ff725e;
   color: #fff !important;
 }
 
 ::-moz-selection {
-  background: #fa65b1;
+  background: #ff725e;
   color: #fff !important;
 }
 
@@ -76,8 +76,8 @@ body {
 .border-first-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #fa65b1 !important;
-  border: 1px solid #fa65b1 !important;
+  color: #ff725e !important;
+  border: 1px solid #ff725e !important;
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -85,6 +85,6 @@ body {
 }
 
 .border-first-button a:hover {
-  background-color: #fa65b1;
+  background-color: #ff725e;
   color: #fff !important;
 }

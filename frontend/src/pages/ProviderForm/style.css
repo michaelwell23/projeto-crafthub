@@ -92,43 +92,16 @@ form#contact #map iframe {
 }
 
 .fill-form .icon:hover a {
-  color: #fa65b1;
+  color: #ff725e;
 }
 
-form#contact input {
-  width: 100%;
-  height: 46px;
-  background-color: transparent;
-  border: 1px solid #eee;
-  outline: none;
-  font-size: 15px;
-  font-weight: 300;
-  color: #2a2a2a;
-  padding: 0px 20px;
-  border-radius: 23px;
-  margin-top: 30px;
+form#contact legend {
+  text-align: left;
+  padding-top: 10px;
 }
 
 form#contact input::placeholder {
   color: #aaa;
-}
-
-form#contact textarea {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  max-height: 200px;
-  min-height: 200px;
-  height: 200px;
-  border-radius: 23px;
-  background-color: transparent;
-  border: 1px solid #eee;
-  outline: none;
-  font-size: 15px;
-  font-weight: 300;
-  color: #2a2a2a;
-  padding: 15px 20px;
-  margin-top: 30px;
 }
 
 form#contact textarea::placeholder {
@@ -140,24 +113,24 @@ form#contact button {
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #fa65b1;
+  color: #ff725e;
   margin-top: 30px;
   width: 100%;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border: 1px solid #fa65b1;
+  border: 1px solid #ff725e;
   transition: all 0.3s;
   outline: none;
 }
 
 form#contact button:hover {
-  background-color: #fa65b1 !important;
+  background-color: #ff725e !important;
   color: #fff !important;
 }
 
-.schedule-item {
+form#contact .schedule-item {
   display: flex;
   align-items: center;
   justify-content: center;

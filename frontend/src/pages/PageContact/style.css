@@ -90,7 +90,7 @@ form#contact #map iframe {
 }
 
 .fill-form .icon:hover a {
-  color: #fa65b1;
+  color: #ff725e;
 }
 
 form#contact input {
@@ -138,20 +138,20 @@ form#contact button {
   background-color: #fff;
   font-size: 15px;
   font-weight: 400;
-  color: #fa65b1;
+  color: #ff725e;
   margin-top: 30px;
   width: 100%;
   text-transform: capitalize;
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border: 1px solid #fa65b1;
+  border: 1px solid #ff725e;
   transition: all 0.3s;
   outline: none;
 }
 
 form#contact button:hover {
-  background-color: #fa65b1 !important;
+  background-color: #ff725e !important;
   color: #fff !important;
 }
 

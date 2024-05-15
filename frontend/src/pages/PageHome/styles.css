@@ -41,7 +41,7 @@
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 700;
-  color: #fa65b1;
+  color: #ff725e;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -79,8 +79,8 @@
   display: inline-block !important;
   padding: 10px 20px !important;
   color: #ffffff !important;
-  background-color: #fa65b1 !important;
-  border: 1px solid #fa65b1 !important;
+  background-color: #ff725e !important;
+  border: 1px solid #ff725e !important;
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -88,7 +88,7 @@
 }
 
 .main-banner .left-content .border-first-button .button_search_provider:hover {
-  color: #fa65b1 !important;
+  color: #ff725e !important;
   background-color: #fff !important;
 }
 
