@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
 
 import db from '../database/connection';
-import convertHourToMinutes from '../utils/converHourToMinutes';
 
 interface ScheduleItem {
   from: string;
@@ -9,7 +8,29 @@ interface ScheduleItem {
 }
 
 export default class servicesControllers {
-  async index(request: Request, response: Response) {}
+  async index(request: Request, response: Response) {
+    const filters = request.query;
+
+    const profession = filters.profession as string;
+
+    if (!filters.profession) {
+      return response.status(400).json({
+        error: 'Missing filters to search services',
+      });
+    }
+    try {
+      const professionals = await db('services')
+        .where('services.profession', '=', profession)
+        .join('users', 'services.user_id', '=', 'users.id')
+        .select(['services.*', 'users.*']);
+
+      return response.json(professionals);
+    } catch (error) {
+      return response.status(500).json({
+        error: 'Error while fetching services',
+      });
+    }
+  }
 
   async create(request: Request, response: Response) {
     const { name, avatar, whatsapp, bio, email, profession, cost, schedule } =
@@ -18,7 +39,7 @@ export default class servicesControllers {
     const trx = await db.transaction();
 
     try {
-      const insertedUserIds = await trx('users').insert({
+      const insertedUsersIds = await trx('users').insert({
         name,
         avatar,
         email,
@@ -26,7 +47,7 @@ export default class servicesControllers {
         bio,
       });
 
-      const user_id = insertedUserIds[0];
+      const user_id = insertedUsersIds[0];
 
       const insertedServicesIds = await trx('services').insert({
         profession,
@@ -39,12 +60,12 @@ export default class servicesControllers {
       const servicesSchedule = schedule.map((scheduleItem: ScheduleItem) => {
         return {
           services_id,
-          from: convertHourToMinutes(scheduleItem.from),
-          to: convertHourToMinutes(scheduleItem.to),
+          from: scheduleItem.from,
+          to: scheduleItem.to,
         };
       });
 
-      await trx('services_schedule').insert(servicesSchedule);
+      await trx('service_schedule').insert(servicesSchedule);
 
       await trx.commit();
 
