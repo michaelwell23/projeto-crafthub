@@ -33,7 +33,7 @@ const About = () => {
                     <div className='section-heading'>
                       <h6>About Us</h6>
                       <h4>
-                        Who is DigiMedia <em>Agency</em>
+                        Sobre a <em>CraftHub</em>
                       </h4>
                       <div className='line-dec'></div>
                     </div>
@@ -51,13 +51,7 @@ const About = () => {
                       comunidade é composta por profissionais habilidosos e
                       comprometidos em oferecer um serviço de alta qualidade,
                       para que você possa confiar em nós para cuidar das suas
-                      necessidades do dia a dia. Não importa se você está
-                      procurando por serviços esporádicos ou deseja estabelecer
-                      uma relação de longo prazo com um profissional de
-                      confiança, o CraftHub está aqui para ajudar. Simplifique a
-                      sua vida hoje mesmo e descubra como podemos tornar a busca
-                      por serviços essenciais uma experiência simples e sem
-                      complicações.
+                      necessidades do dia a dia.
                     </p>
                   </div>
                 </div>

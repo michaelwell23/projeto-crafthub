@@ -33,13 +33,15 @@ const Landing = () => {
                   >
                     <div className='row'>
                       <div className='col-lg-12'>
-                        <h6>Digital Media Agency</h6>
-                        <h2>We Boost Your Website Traffic</h2>
+                        <h6>Agencia de Servios domésticos</h6>
+                        <h2>Aqui você encontra o melho profissional</h2>
                         <p>
-                          This template is brought to you by TemplateMo website.
-                          Feel free to use this for a commercial purpose. You
-                          are not allowed to redistribute the template ZIP file
-                          on any other template website. Thank you.
+                          Seja encanador, eletricista, faxineiro ou outros
+                          serviços, a CraftHub possibilita vocẽ a encontrar o
+                          profissional qualificado para o serviço de sua
+                          necessidade. Tudo muito fácil, tudo muito prático, com
+                          apenas alguns cliques, você se conecta com o
+                          profissional que deseja.
                         </p>
                       </div>
                       <div className='col-lg-12'>
