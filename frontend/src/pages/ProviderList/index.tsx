@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 import ProviderItem from '../../components/ProviderItem';
@@ -12,7 +11,6 @@ import './style.css';
 const ProviderList = () => {
   return (
     <>
-      <Header />
       <div id='provider' className='provider'>
         <div className='container'>
           <div className='row'>

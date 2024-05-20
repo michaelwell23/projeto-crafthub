@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 import Textarea from '../../components/Textarea';
-import Header from '../../components/Header';
+
 import Select from '../../components/Select';
 
 import './style.css';
@@ -11,8 +11,6 @@ import './style.css';
 const ProviderForm = () => {
   return (
     <>
-      <Header />
-
       <div id='contact' className='contact-us section'>
         <div className='container'>
           <div className='row'>

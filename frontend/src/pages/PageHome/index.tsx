@@ -1,80 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import logo from '../../assets/images/logo.png';
 import landing from '../../assets/images/ilustration.svg';
-import add from '../../assets/images/icons/add_work.svg';
-import searchIcon from '../../assets/images/icons/work.svg';
-import purpleHeart from '../../assets/images/icons/purple-heart.svg';
-
-import Header from '../../components/Header';
+import searchIcon from '../../assets/images/icons/search.svg';
+import registerIcon from '../../assets/images/icons/add_work.svg';
+import heartIcon from '../../assets/images/icons/heart.svg';
 
 import './styles.css';
 
 const Landing = () => {
   return (
     <>
-      <Header />
-
-      <div
-        className='main-banner wow fadeIn'
-        id='top'
-        data-wow-duration='1s'
-        data-wow-delay='0.5s'
-      >
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-12'>
-              <div className='row'>
-                <div className='col-lg-6 align-self-center'>
-                  <div
-                    className='left-content show-up header-text wow fadeInLeft'
-                    data-wow-duration='1s'
-                    data-wow-delay='1s'
-                  >
-                    <div className='row'>
-                      <div className='col-lg-12'>
-                        <h6>Agencia de Servios domésticos</h6>
-                        <h2>Aqui você encontra o melho profissional</h2>
-                        <p>
-                          Seja encanador, eletricista, faxineiro ou outros
-                          serviços, a CraftHub possibilita vocẽ a encontrar o
-                          profissional qualificado para o serviço de sua
-                          necessidade. Tudo muito fácil, tudo muito prático, com
-                          apenas alguns cliques, você se conecta com o
-                          profissional que deseja.
-                        </p>
-                      </div>
-                      <div className='col-lg-12'>
-                        <div className='border-first-button scroll-to-section'>
-                          <Link
-                            className='button_search_provider'
-                            to='/search-provider'
-                          >
-                            Busca um profissiona?
-                          </Link>
-                          <Link
-                            className='link_register_provider'
-                            to='/register-provider'
-                          >
-                            Você é um profissiona?
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-lg-6'>
-                  <div
-                    className='right-image wow fadeInRight'
-                    data-wow-duration='1s'
-                    data-wow-delay='0.5s'
-                  >
-                    <img src={landing} alt='' />
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div id='landing-page'>
+        <div id='landing-page-content' className='container'>
+          <div className='logo-container'>
+            <img src={logo} className='image-hero' alt='Logo CraftHub' />
+            <h2>
+              Os melhores profissionais você encontra na <span>CraftHub</span>
+            </h2>
           </div>
+          <img src={landing} alt='Plataforma de profissionais' />
+
+          <div className='buttons-container'>
+            <Link to='/search-provider' className='providers'>
+              <img src={searchIcon} alt='pesquisar por profissionais' />
+              Pesquisar por profissionais
+            </Link>
+
+            <Link to='/register-provider' className='register'>
+              <img
+                src={registerIcon}
+                alt='Registar-se como prestador de serviços'
+              />
+              Cadastrar-se como prestador
+            </Link>
+          </div>
+          <span className='total-connections'>
+            Total de 23456 conexões já realizadas
+            <img src={heartIcon} alt='Coração' />
+          </span>
         </div>
       </div>
     </>
