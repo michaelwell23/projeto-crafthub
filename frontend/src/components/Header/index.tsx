@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo/logo.png';
 
 const Header: React.FC = () => {
   return (
@@ -41,26 +41,34 @@ const Header: React.FC = () => {
                         </a>
                       </li>
                       <li className='nav-item'>
-                        <a className='page-scroll' href='#features'>
-                          Features
-                        </a>
-                      </li>
-                      <li className='nav-item'>
                         <a className='page-scroll' href='#about'>
                           About
                         </a>
                       </li>
-
                       <li className='nav-item'>
-                        <a className='page-scroll' href='#why'>
-                          Why
+                        <a className='page-scroll' href='#service'>
+                          Services
                         </a>
                       </li>
                       <li className='nav-item'>
-                        <a href='javascript:void(0)'>Pricing</a>
+                        <a className='' href='#0'>
+                          Portfolio
+                        </a>
                       </li>
                       <li className='nav-item'>
-                        <a href='javascript:void(0)'>Clients</a>
+                        <a className='' href='#0'>
+                          Pricing
+                        </a>
+                      </li>
+                      <li className='nav-item'>
+                        <a className='' href='#0'>
+                          Team
+                        </a>
+                      </li>
+                      <li className='nav-item'>
+                        <a className='' href='#0'>
+                          Contact
+                        </a>
                       </li>
                     </ul>
                   </div>
