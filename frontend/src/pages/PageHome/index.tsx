@@ -1,4 +1,3 @@
-/* eslint-disable no-unreachable */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -184,6 +183,359 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
+      <section
+        id='service'
+        className='service-section img-bg pt-100 pb-100 mt-150'
+      >
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <div className='col-xxl-5 col-xl-6 col-lg-7 col-md-10'>
+              <div className='section-title text-center mb-50'>
+                <h1>Our services</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt labore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='row'>
+            <div className='col-xl-3 col-md-6'>
+              <div className='single-service'>
+                <div className='icon color-1'>
+                  <i className='lni lni-layers'></i>
+                </div>
+                <div className='content'>
+                  <h3>UI/UX design</h3>
+                  <p>
+                    Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
+                    nonumy.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-3 col-md-6'>
+              <div className='single-service'>
+                <div className='icon color-2'>
+                  <i className='lni lni-code-alt'></i>
+                </div>
+                <div className='content'>
+                  <h3>Web design</h3>
+                  <p>
+                    Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
+                    nonumy.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-3 col-md-6'>
+              <div className='single-service'>
+                <div className='icon color-3'>
+                  <i className='lni lni-pallet'></i>
+                </div>
+                <div className='content'>
+                  <h3>Graphics design</h3>
+                  <p>
+                    Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
+                    nonumy.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-3 col-md-6'>
+              <div className='single-service'>
+                <div className='icon color-4'>
+                  <i className='lni lni-vector'></i>
+                </div>
+                <div className='content'>
+                  <h3>Brand design</h3>
+                  <p>
+                    Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
+                    nonumy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id='connections' className='view-all-btn text-center pt-30'>
+            <a href='javascript:void(0)' className='main-btn btn-hover'>
+              View All Services
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className='counter-up-section pt-150'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-6'>
+              <div className='counter-up-content mb-50'>
+                <div className='section-title mb-40'>
+                  <h1 className='mb-20 wow fadeInUp' data-wow-delay='.2s'>
+                    Why we are the best, Why you hire?
+                  </h1>
+                  <p className='wow fadeInUp' data-wow-delay='.4s'>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat.
+                  </p>
+                </div>
+                <div className='counter-up-wrapper'>
+                  <div className='row'>
+                    <div className='col-lg-6 col-sm-6'>
+                      <div className='single-counter'>
+                        <div className='icon color-1'>
+                          <i className='lni lni-emoji-smile'></i>
+                        </div>
+                        <div className='content'>
+                          <h1
+                            id='secondo1'
+                            className='countup'
+                            cup-end='3642'
+                            cup-append=' '
+                          >
+                            3642
+                          </h1>
+                          <span>Happy client</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-6 col-sm-6'>
+                      <div className='single-counter'>
+                        <div className='icon color-2'>
+                          <i className='lni lni-checkmark'></i>
+                        </div>
+                        <div className='content'>
+                          <h1
+                            id='secondo2'
+                            className='countup'
+                            cup-end='5436'
+                            cup-append=' '
+                          >
+                            5436
+                          </h1>
+                          <span>Project done</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-6 col-sm-6'>
+                      <div className='single-counter'>
+                        <div className='icon color-3'>
+                          <i className='lni lni-world'></i>
+                        </div>
+                        <div className='content'>
+                          <h1
+                            id='secondo3'
+                            className='countup'
+                            cup-end='642'
+                            cup-append='K'
+                          >
+                            642
+                          </h1>
+                          <span>Live Design</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-6 col-sm-6'>
+                      <div className='single-counter'>
+                        <div className='icon color-4'>
+                          <i className='lni lni-users'></i>
+                        </div>
+                        <div className='content'>
+                          <h1
+                            id='secondo4'
+                            className='countup'
+                            cup-end='42'
+                            cup-append=' '
+                          >
+                            42
+                          </h1>
+                          <span>Creative designer's</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-6 col-lg-6'>
+              <div className='counter-up-img mb-50'>
+                <img src='assets/img/counter-up/counter-up-img.svg' alt='' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='contact' className='cta-section img-bg pt-110 pb-60'>
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-xl-6 col-lg-7'>
+              <div className='section-title mb-50'>
+                <h1 className='mb-20 wow fadeInUp' data-wow-delay='.2s'>
+                  Have any project in you mind? You can hire
+                </h1>
+                <p className='wow fadeInUp' data-wow-delay='.4s'>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt.
+                </p>
+              </div>
+            </div>
+            <div className='col-xl-6 col-lg-5'>
+              <div className='cta-btn text-lg-end mb-50'>
+                <a
+                  href='javascript:void(0)'
+                  className='main-btn btn-hover text-uppercase'
+                >
+                  LET'S START YOUR PROJECT
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className='footer'>
+        <div className='container'>
+          <div className='widget-wrapper'>
+            <div className='row'>
+              <div className='col-xl-3 col-md-6'>
+                <div className='footer-widget'>
+                  <div className='logo mb-35'>
+                    <a href='index.html'>
+                      <img src='assets/img/logo/logo.svg' alt='' />
+                    </a>
+                  </div>
+                  <p className='desc mb-35'>
+                    We are expert designer team, There have a lot of designer
+                    and developer If you have any project you can hire Create a
+                    website.
+                  </p>
+                  <ul className='socials'>
+                    <li>
+                      <a href='jvascript:void(0)'>
+                        {' '}
+                        <i className='lni lni-facebook-filled'></i>{' '}
+                      </a>
+                    </li>
+                    <li>
+                      <a href='jvascript:void(0)'>
+                        {' '}
+                        <i className='lni lni-twitter-filled'></i>{' '}
+                      </a>
+                    </li>
+                    <li>
+                      <a href='jvascript:void(0)'>
+                        {' '}
+                        <i className='lni lni-instagram-filled'></i>{' '}
+                      </a>
+                    </li>
+                    <li>
+                      <a href='jvascript:void(0)'>
+                        {' '}
+                        <i className='lni lni-linkedin-original'></i>{' '}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className='col-xl-2 offset-xl-1 col-md-5 offset-md-1 col-sm-6'>
+                <div className='footer-widget'>
+                  <h3>Link</h3>
+                  <ul className='links'>
+                    <li>
+                      <a href='javascript:void(0)'>Home</a>{' '}
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>About</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Services</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Portfolio</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Pricing</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Team</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className='col-xl-3 col-md-6 col-sm-6'>
+                <div className='footer-widget'>
+                  <h3>Services</h3>
+                  <ul className='links'>
+                    <li>
+                      <a href='javascript:void(0)'>Graphic design</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Web design</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Visual design</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Product design</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>UI/UX design</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Web development</a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>Startup business</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className='col-xl-3 col-md-6'>
+                <div className='footer-widget'>
+                  <h3>Contact</h3>
+                  <ul>
+                    <li>+003894372632</li>
+                    <li>helldesigner@gmail.ccom</li>
+                    <li>United state of America</li>
+                  </ul>
+                  <div className='contact_map'>
+                    <div className='gmap_canvas'>
+                      <iframe
+                        id='gmap_canvas'
+                        src='https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed'
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='copy-right'>
+            <p>
+              Design and Developed by
+              <a
+                href='https://uideck.com'
+                rel='nofollow noreferrer'
+                target='_blank'
+              >
+                UIdeck
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

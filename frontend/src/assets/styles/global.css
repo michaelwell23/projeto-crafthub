@@ -37,6 +37,14 @@ a {
   transition: all 0.3s ease-out 0s;
 }
 
+.counter-up-section i {
+  margin: 18px;
+}
+
+.footer i {
+  margin: 11px;
+}
+
 a,
 a:focus,
 a:hover {

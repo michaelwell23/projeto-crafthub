@@ -51,23 +51,13 @@ const Header: React.FC = () => {
                         </a>
                       </li>
                       <li className='nav-item'>
-                        <a className='' href='#0'>
-                          Portfolio
+                        <a className='' href='#connections'>
+                          Conexões
                         </a>
                       </li>
                       <li className='nav-item'>
-                        <a className='' href='#0'>
-                          Pricing
-                        </a>
-                      </li>
-                      <li className='nav-item'>
-                        <a className='' href='#0'>
-                          Team
-                        </a>
-                      </li>
-                      <li className='nav-item'>
-                        <a className='' href='#0'>
-                          Contact
+                        <a className='' href='#contact'>
+                          Contato
                         </a>
                       </li>
                     </ul>

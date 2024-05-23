@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.0.0",
     "animate.css": "^4.1.1",
     "jquery": "^3.7.1",
+    "lineicons": "^1.0.3",
     "owl-carousel": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
