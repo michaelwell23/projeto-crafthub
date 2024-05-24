@@ -1,0 +1,39 @@
+.about-section .about-img img {
+  width: 100%;
+}
+
+.about-section .accordion .single-faq {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 35px #f2f4f9;
+}
+
+.about-section .accordion .single-faq button {
+  padding: 20px 30px 15px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #313450;
+  position: relative;
+}
+
+.about-section .accordion .single-faq button::after {
+  content: '\eb2c';
+  font: normal normal normal 1em/1 'LineIcons';
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-out 0s;
+}
+
+.about-section .accordion .single-faq button.collapsed::after {
+  content: '\eb53';
+}
+
+.about-section .accordion .single-faq .faq-content {
+  padding: 0 30px;
+  padding-bottom: 20px;
+}

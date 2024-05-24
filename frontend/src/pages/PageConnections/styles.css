@@ -1,0 +1,100 @@
+@media only screen and (min-width: 1400px) {
+  .counter-up-section .counter-up-content {
+    margin-right: 65px;
+  }
+}
+
+.counter-up-section .counter-up-content .counter-up-wrapper .single-counter {
+  margin-bottom: 35px;
+}
+
+.counter-up-section
+  .counter-up-content
+  .counter-up-wrapper
+  .single-counter
+  .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #4e6ef1;
+  font-size: 42px;
+}
+
+.counter-up-section
+  .counter-up-content
+  .counter-up-wrapper
+  .single-counter
+  .icon.color-1 {
+  background: #ffefff;
+}
+
+.counter-up-section
+  .counter-up-content
+  .counter-up-wrapper
+  .single-counter
+  .icon.color-2 {
+  background: #e1f2fb;
+}
+
+.counter-up-section
+  .counter-up-content
+  .counter-up-wrapper
+  .single-counter
+  .icon.color-3 {
+  background: #ffeaea;
+}
+
+.counter-up-section
+  .counter-up-content
+  .counter-up-wrapper
+  .single-counter
+  .icon.color-4 {
+  background: #ece8ff;
+}
+
+.counter-up-section
+  .counter-up-content
+  .counter-up-wrapper
+  .single-counter
+  .content
+  h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .content
+    h1 {
+    font-size: 38px;
+  }
+}
+
+.counter-up-section
+  .counter-up-content
+  .counter-up-wrapper
+  .single-counter
+  .content
+  span {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-up-section
+    .counter-up-content
+    .counter-up-wrapper
+    .single-counter
+    .content
+    span {
+    font-size: 18px;
+  }
+}
+
+.counter-up-section .counter-up-img img {
+  width: 100%;
+}

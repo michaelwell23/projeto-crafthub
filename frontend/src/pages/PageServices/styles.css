@@ -1,0 +1,66 @@
+.service-section {
+  background-image: url('../../assets/images/service/service-bg.jpg');
+}
+
+.service-section .single-service {
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.service-section .single-service:hover .icon {
+  color: #fff;
+}
+
+.service-section .single-service:hover .icon.color-1 {
+  background: #fb32fb;
+}
+
+.service-section .single-service:hover .icon.color-2 {
+  background: #4e6ef1;
+}
+
+.service-section .single-service:hover .icon.color-3 {
+  background: #ff3b3b;
+}
+
+.service-section .single-service:hover .icon.color-4 {
+  background: #5a37ff;
+}
+
+.service-section .single-service .icon {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #313450;
+  transition: all 0.3s ease-out 0s;
+}
+
+.service-section .single-service .icon.color-1 {
+  background: #ffefff;
+}
+
+.service-section .single-service .icon.color-2 {
+  background: #e4e9ff;
+}
+
+.service-section .single-service .icon.color-3 {
+  background: #ffeaea;
+}
+
+.service-section .single-service .icon.color-4 {
+  background: #ece8ff;
+}
+
+.service-section .single-service .content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}

@@ -4,7 +4,7 @@ import Input from '../../components/Input';
 import Select from '../../components/Select';
 import ProviderItem from '../../components/ProviderItem';
 
-import whatsapp from '../../assets/images/icons/whatsapp.svg';
+import Header from '../../components/Header';
 
 import './style.css';
 

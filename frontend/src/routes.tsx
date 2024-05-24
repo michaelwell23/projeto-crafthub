@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-import Landing from './pages/PageHome';
+import Landing from './pages/index';
 import ProviderList from './pages/ProviderList';
 import ProviderForm from './pages/ProviderForm';
 
