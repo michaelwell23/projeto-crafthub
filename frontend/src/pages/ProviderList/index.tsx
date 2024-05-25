@@ -11,16 +11,17 @@ import './style.css';
 const ProviderList = () => {
   return (
     <>
+      <Header />
       <div id='provider' className='provider'>
         <div className='container'>
           <div className='row'>
             <div
-              className='col-lg-4 offset-lg-4  wow fadeInDown'
+              className='content col-lg-8 offset-lg-4 wow fadeInDown'
               data-wow-duration='1s'
               data-wow-delay='0.3s'
             >
               <div className='section-heading'>
-                <h6>Encontre o Profissional que procura</h6>
+                <h1>Encontre o Profissional que procura</h1>
                 <h4>
                   Profissionais da <em>CraftHub</em>
                 </h4>

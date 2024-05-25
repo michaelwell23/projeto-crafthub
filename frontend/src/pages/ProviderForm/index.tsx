@@ -7,10 +7,12 @@ import Textarea from '../../components/Textarea';
 import Select from '../../components/Select';
 
 import './style.css';
+import Header from '../../components/Header';
 
 const ProviderForm = () => {
   return (
     <>
+      <Header />
       <div id='contact' className='contact-us section'>
         <div className='container'>
           <div className='row'>

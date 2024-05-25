@@ -1,18 +1,30 @@
 .provider:before {
   content: '';
-  /* background-image: url('../../assets/images/provider-left-dec.jpg'); */
+  background-image: url('../../assets/images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 0px;
-  width: 961px;
-  height: 1020px;
+  width: 100%;
+  height: 400px;
   z-index: 0;
 }
 
 .provider {
   position: relative;
   padding-top: 130px;
+
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 20;
+}
+
+.provider .content {
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 20;
 }
 
 .provider .section-heading {
