@@ -1,40 +1,59 @@
 import React from 'react';
 
-import './style.css';
+import api from '../../services/api';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
+import './style.css';
 
-const ProviderItem: React.FC = () => {
+export interface Provider {
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string;
+  email: string;
+  profession: string;
+  whatsapp: string;
+}
+
+interface ProviderItemProps {
+  provider: Provider;
+}
+
+const ProviderItem: React.FC<ProviderItemProps> = ({ provider }) => {
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: provider.id,
+    });
+  }
+
   return (
     <>
       <div className='card wow fadeInUp '>
         <div className='header'>
           <div className='provider-info'>
             <a className='title' href='#'>
-              John Doe
+              {provider.name}
             </a>
-            <p className='job'>Encanador</p>
+            <p className='job'>{provider.profession}</p>
           </div>
           <div className='image'>
-            <img
-              src='https://cdn-dlnki.nitrocdn.com/ekffXpIyDDSAfpoSydCcoJXYXKHyvGcR/assets/images/optimized/rev-46abe52/wp-content/uploads/2023/02/24426AptGr21147cTgF56613611.jpg'
-              alt=''
-            />
+            <img src={provider.avatar} alt={provider.name} />
           </div>
         </div>
-        <p className='description'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit
-          illum provident a, ipsa maiores deleniti consectetur nobis et eaque.
-        </p>
+        <p className='description'>{provider.bio}</p>
         <dl className='post-info'>
           <div className='cr'>
             <dd className='dd'>Preço/Diária</dd>
             <dt className='dt'>
-              R$ <span>120,00</span>
+              R$ <span>{provider.cost}</span>
             </dt>
           </div>
           <div className='contact'>
-            <a href=''>
+            <a
+              onClick={createNewConnection}
+              href={`https://wa.me/${provider.whatsapp}`}
+            >
               <img src={whatsappIcon} alt='' />
               Whatsapp
             </a>

@@ -57,3 +57,34 @@
   margin: 0 auto;
   padding-bottom: 40px;
 }
+
+.provider form {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px;
+}
+
+.provider form button {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0d6efd;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: 1px solid #0d6efd;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.provider form button:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.provider form select {
+  border: 1px solid #000;
+}
