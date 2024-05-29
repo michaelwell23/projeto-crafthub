@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, useEffect, FormEvent } from 'react';
 
 import Select from '../../components/Select';
 import ProviderItem, { Provider } from '../../components/ProviderItem';
@@ -25,6 +25,15 @@ const ProviderList = () => {
 
     setProviders(response.data);
   }
+
+  useEffect(() => {
+    async function fetchAllProviders() {
+      const response = await api.get('all-services');
+      setProviders(response.data);
+    }
+
+    fetchAllProviders();
+  }, []);
 
   return (
     <>
@@ -57,10 +66,6 @@ const ProviderList = () => {
                   setProfession(e.target.value);
                 }}
                 options={[
-                  {
-                    value: 'Ajudante de Cozinha',
-                    label: 'Ajudante de Cozinha',
-                  },
                   {
                     value: 'Arrumador(a)',
                     label: 'Arrumador(a)',

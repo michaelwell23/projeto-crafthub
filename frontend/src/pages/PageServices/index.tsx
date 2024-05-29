@@ -1,6 +1,12 @@
 import React from 'react';
 
+import baba from '../../assets/images/service/baba.png';
+import cuidadora from '../../assets/images/service/cuidador.png';
+import eletricista from '../../assets/images/service/eletricista.png';
+import encanador from '../../assets/images/service/encanador.png';
+
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 const PageServices: React.FC = () => {
   return (
@@ -26,10 +32,10 @@ const PageServices: React.FC = () => {
             <div className='col-xl-3 col-md-6'>
               <div className='single-service'>
                 <div className='icon color-1'>
-                  <i className='lni lni-layers'></i>
+                  <img src={baba} alt='' />
                 </div>
                 <div className='content'>
-                  <h3>UI/UX design</h3>
+                  <h3>Babá</h3>
                   <p>
                     Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
                     nonumy.
@@ -40,10 +46,10 @@ const PageServices: React.FC = () => {
             <div className='col-xl-3 col-md-6'>
               <div className='single-service'>
                 <div className='icon color-2'>
-                  <i className='lni lni-code-alt'></i>
+                  <img src={cuidadora} alt='' />
                 </div>
                 <div className='content'>
-                  <h3>Web design</h3>
+                  <h3>Cuidador(a)</h3>
                   <p>
                     Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
                     nonumy.
@@ -54,10 +60,10 @@ const PageServices: React.FC = () => {
             <div className='col-xl-3 col-md-6'>
               <div className='single-service'>
                 <div className='icon color-3'>
-                  <i className='lni lni-pallet'></i>
+                  <img src={eletricista} alt='' />
                 </div>
                 <div className='content'>
-                  <h3>Graphics design</h3>
+                  <h3>Eletricista</h3>
                   <p>
                     Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
                     nonumy.
@@ -68,10 +74,10 @@ const PageServices: React.FC = () => {
             <div className='col-xl-3 col-md-6'>
               <div className='single-service'>
                 <div className='icon color-4'>
-                  <i className='lni lni-vector'></i>
+                  <img src={encanador} alt='' />
                 </div>
                 <div className='content'>
-                  <h3>Brand design</h3>
+                  <h3>Encanador</h3>
                   <p>
                     Lorem ipsum dolor sitsdw consetsad pscing eliewtr, diam
                     nonumy.
@@ -82,9 +88,9 @@ const PageServices: React.FC = () => {
           </div>
 
           <div id='connections' className='view-all-btn text-center pt-30'>
-            <a href='javascript:void(0)' className='main-btn btn-hover'>
-              View All Services
-            </a>
+            <Link to='/search-provider' className='main-btn btn-hover'>
+              Deseja buscar um profisional?
+            </Link>
           </div>
         </div>
       </section>

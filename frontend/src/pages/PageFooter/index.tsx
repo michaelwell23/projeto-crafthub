@@ -75,28 +75,22 @@ const PageFooter: React.FC = () => {
 
               <div className='col-xl-3 col-md-6 col-sm-6'>
                 <div className='footer-widget'>
-                  <h3>Services</h3>
+                  <h3>Outros Links</h3>
                   <ul className='links'>
                     <li>
-                      <a href='javascript:void(0)'>Graphic design</a>
+                      <a href='javascript:void(0)'>Serviços residenciais</a>
                     </li>
                     <li>
-                      <a href='javascript:void(0)'>Web design</a>
+                      <a href='javascript:void(0)'>Serviços empresariais</a>
                     </li>
                     <li>
-                      <a href='javascript:void(0)'>Visual design</a>
+                      <a href='javascript:void(0)'>O que é CraftHub</a>
                     </li>
                     <li>
-                      <a href='javascript:void(0)'>Product design</a>
+                      <a href='javascript:void(0)'>Nossa história</a>
                     </li>
                     <li>
-                      <a href='javascript:void(0)'>UI/UX design</a>
-                    </li>
-                    <li>
-                      <a href='javascript:void(0)'>Web development</a>
-                    </li>
-                    <li>
-                      <a href='javascript:void(0)'>Startup business</a>
+                      <a href='javascript:void(0)'>Blog</a>
                     </li>
                   </ul>
                 </div>
@@ -104,7 +98,7 @@ const PageFooter: React.FC = () => {
 
               <div className='col-xl-3 col-md-6'>
                 <div className='footer-widget'>
-                  <h3>Contact</h3>
+                  <h3>Contato</h3>
                   <ul>
                     <li>+5511943726323</li>
                     <li>contato@crafthub.ccom</li>

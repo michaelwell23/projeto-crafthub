@@ -165,10 +165,6 @@ const ProviderForm = () => {
                               }}
                               options={[
                                 {
-                                  value: 'Ajudante de Cozinha',
-                                  label: 'Ajudante de Cozinha',
-                                },
-                                {
                                   value: 'Arrumador(a)',
                                   label: 'Arrumador(a)',
                                 },

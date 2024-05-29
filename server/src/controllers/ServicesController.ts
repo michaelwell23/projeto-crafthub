@@ -80,4 +80,18 @@ export default class servicesControllers {
       });
     }
   }
+
+  async getAll(request: Request, response: Response) {
+    try {
+      const services = await db('services')
+        .join('users', 'services.user_id', '=', 'users.id')
+        .select(['services.*', 'users.*']);
+
+      return response.json(services);
+    } catch (error) {
+      return response.status(500).json({
+        error: 'Error while fetching services',
+      });
+    }
+  }
 }

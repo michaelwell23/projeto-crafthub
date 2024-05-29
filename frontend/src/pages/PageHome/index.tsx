@@ -19,14 +19,14 @@ const Home: React.FC = () => {
             <div className='col-lg-6'>
               <div className='hero-content'>
                 <span className='wow fadeInLeft' data-wow-delay='.2s'>
-                  Welcome To Bliss
+                  Bem-vindo ao CraftHub
                 </span>
                 <h1 className='wow fadeInUp' data-wow-delay='.4s'>
-                  You are using free lite version of Bliss.
+                  Facilite a sua busca por um profissional de qualidade.
                 </h1>
                 <p className='wow fadeInUp' data-wow-delay='.6s'>
-                  Please, purchase full version of the template to get all
-                  sections, elements and permission to remove footer credits.
+                  Aqui você encontra os melhores profissionais, de forma
+                  prática, rápida e direta.
                 </p>
                 <Link
                   to='/search-provider'

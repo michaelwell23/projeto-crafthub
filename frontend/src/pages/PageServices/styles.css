@@ -10,6 +10,10 @@
   margin-bottom: 30px;
 }
 
+.service-section .icon img {
+  width: 50px !important;
+}
+
 .service-section .single-service:hover .icon {
   color: #fff;
 }

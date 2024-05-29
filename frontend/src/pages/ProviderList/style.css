@@ -1,3 +1,7 @@
+header {
+  background-color: #f4f3fa;
+}
+
 .provider:before {
   content: '';
   background-image: url('../../assets/images/hero/hero-bg.jpg');
