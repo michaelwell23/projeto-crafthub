@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./web/src/assets/images/logo.png" title="CraftHub" alt="logo crafthub" width="500px" />
+  <img src="./frontend/src/assets/images/logo/logo.png" title="CraftHub" alt="logo crafthub" width="500px" />
 </h1>
 
 <p align="center">

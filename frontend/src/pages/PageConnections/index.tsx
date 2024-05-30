@@ -1,10 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './styles.css';
 
 import CouterUp from '../../assets/images/counter-up/counter-up-img.svg';
+import api from '../../services/api';
+
+export const getUserCount = async (): Promise<number> => {
+  const response = await api.get('/count/users');
+  return response.data.count;
+};
 
 const PageConnections: React.FC = () => {
+  const [count, setCount] = useState<number | null>(null);
+  const [totalConnections, setTotalConnections] = useState(0);
+
+  useEffect(() => {
+    api.get('/count/users').then((response) => {
+      const { count } = response.data;
+
+      setCount(count);
+    });
+  }, []);
+
+  useEffect(() => {
+    api.get('connections').then((response) => {
+      const { total } = response.data;
+
+      setTotalConnections(total);
+    });
+  }, []);
+
   return (
     <>
       <section id='connections' className='counter-up-section pt-150'>
@@ -14,7 +39,7 @@ const PageConnections: React.FC = () => {
               <div className='counter-up-content mb-50'>
                 <div className='section-title mb-40'>
                   <h1 className='mb-20 wow fadeInUp' data-wow-delay='.2s'>
-                    Why we are the best, Why you hire?
+                    Por que somos os melhores?
                   </h1>
                   <p className='wow fadeInUp' data-wow-delay='.4s'>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed
@@ -30,15 +55,19 @@ const PageConnections: React.FC = () => {
                           <i className='lni lni-emoji-smile'></i>
                         </div>
                         <div className='content'>
-                          <h1
-                            id='secondo1'
-                            className='countup'
-                            cup-end='3642'
-                            cup-append=' '
-                          >
-                            3642
-                          </h1>
-                          <span>Happy client</span>
+                          {count !== null ? (
+                            <h1
+                              id='secondo1'
+                              className='countup'
+                              cup-end='3642'
+                              cup-append=' '
+                            >
+                              {count}
+                            </h1>
+                          ) : (
+                            <p>Carregando...</p>
+                          )}
+                          <span>Profissionais Cadastrados</span>
                         </div>
                       </div>
                     </div>
@@ -51,12 +80,12 @@ const PageConnections: React.FC = () => {
                           <h1
                             id='secondo2'
                             className='countup'
-                            cup-end='5436'
+                            cup-end={totalConnections}
                             cup-append=' '
                           >
-                            5436
+                            {totalConnections}
                           </h1>
-                          <span>Project done</span>
+                          <span>Conexões com profissionais</span>
                         </div>
                       </div>
                     </div>
@@ -74,7 +103,7 @@ const PageConnections: React.FC = () => {
                           >
                             642
                           </h1>
-                          <span>Live Design</span>
+                          <span>Profissões</span>
                         </div>
                       </div>
                     </div>
@@ -92,7 +121,7 @@ const PageConnections: React.FC = () => {
                           >
                             42
                           </h1>
-                          <span>Creative designer's</span>
+                          <span>Pessoas satisfeitas</span>
                         </div>
                       </div>
                     </div>

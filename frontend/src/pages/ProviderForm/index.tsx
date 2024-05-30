@@ -68,7 +68,7 @@ const ProviderForm = () => {
   return (
     <>
       <Header />
-      <div id='contact' className='contact-us section'>
+      <div id='provider-form' className='provider-form-us section'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6 offset-lg-3'>
@@ -90,7 +90,7 @@ const ProviderForm = () => {
               data-wow-duration='0.5s'
               data-wow-delay='0.25s'
             >
-              <form id='contact' onSubmit={handleCreateServices}>
+              <form id='form' onSubmit={handleCreateServices}>
                 <div className='row'>
                   <div className='col-lg-12'>
                     <div className='fill-form'>
@@ -155,7 +155,9 @@ const ProviderForm = () => {
                           </fieldset>
                         </div>
                         <div className='col-lg-12'>
-                          <legend>Dados do prestador</legend>
+                          <legend className='provider-data'>
+                            Dados do prestador
+                          </legend>
                           <fieldset>
                             <Select
                               name='profession'

@@ -129,7 +129,7 @@ const Header: React.FC = () => {
                                   : { color: '#6b6f92' }
                               }
                             >
-                              Contato
+                              Para profissionais
                             </a>
                           </li>
                         </ul>

@@ -22,7 +22,7 @@ const AboutSection: React.FC = () => {
           <div className='col-lg-6'>
             <div className='about-content mb-50'>
               <div className='section-title mb-50'>
-                <h1 className='mb-25'>Read more about our Digital Agency</h1>
+                <h1 className='mb-25'>Read more about is CraftHub</h1>
                 <p>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna

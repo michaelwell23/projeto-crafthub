@@ -3,7 +3,7 @@ header {
   z-index: 20;
 }
 
-.contact-us::before {
+.provider-form-us::before {
   content: '';
   background-image: url('../../assets/images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
@@ -15,11 +15,11 @@ header {
   z-index: 0;
 }
 
-.contact-us .section-heading .line-dec {
+.provider-form-us .section-heading .line-dec {
   margin: 0 auto;
 }
 
-.contact-us .section-heading {
+.provider-form-us .section-heading {
   text-align: center;
   margin-bottom: 80px;
 
@@ -30,7 +30,7 @@ header {
   margin: 0 auto;
 }
 
-form#contact:before {
+form#form:before {
   background-image: url('../../assets/images/form/contact-top-right.png');
   position: absolute;
   right: 0;
@@ -42,14 +42,14 @@ form#contact:before {
   z-index: 1;
 }
 
-.contact-dec img {
+.provider-form-dec img {
   max-width: 224px;
   position: absolute;
   right: 25px;
   top: -242px;
 }
 
-form#contact:after {
+form#form:after {
   background-image: url('../../assets/images/form/contact-bottom-right.png');
   position: absolute;
   right: 0;
@@ -61,7 +61,7 @@ form#contact:after {
   z-index: 1;
 }
 
-form#contact {
+form#form {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   background-color: #fff;
@@ -69,12 +69,17 @@ form#contact {
   text-align: center;
 }
 
-form#contact #map iframe {
+form#provider-form #map iframe {
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
   margin-bottom: -7px;
   position: relative;
   z-index: 2;
+}
+
+legend.provider-data {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .fill-form {
@@ -111,7 +116,7 @@ form#contact #map iframe {
   color: #0d6efd;
 }
 
-form#contact input {
+form#form input {
   width: 100%;
   height: 46px;
   background-color: transparent;
@@ -125,11 +130,11 @@ form#contact input {
   margin-top: 30px;
 }
 
-form#contact input::placeholder {
+form#form input::placeholder {
   color: #aaa;
 }
 
-form#contact textarea {
+form#form textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -147,11 +152,11 @@ form#contact textarea {
   margin-top: 30px;
 }
 
-form#contact textarea::placeholder {
+form#form textarea::placeholder {
   color: #aaa;
 }
 
-form#contact button {
+form#form button {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
@@ -168,7 +173,7 @@ form#contact button {
   outline: none;
 }
 
-form#contact button:hover {
+form#form button:hover {
   background-color: #0d6efd !important;
   color: #fff !important;
 }
