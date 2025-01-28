@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="[/server](https://github.com/michaelwell23/projeto-crafthub/tree/master/server)">
+  <a href="https://github.com/michaelwell23/projeto-crafthub/tree/master/server">
   <img src="https://raw.githubusercontent.com/michaelwell23/projeto-servico-de-entregas/master/server/.github/nodejs.svg" alt="Node.Js" />
   </a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/michaelwell23/projeto-crafthub/tree/master/frontend">
